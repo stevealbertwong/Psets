@@ -1077,6 +1077,14 @@ decision boundaries -1pt
 
 8-18
 109 variance -1pt
+Error correction algo -1pt 
+unique identifier takes at least 2 power more memory for sending the string
+if you want to be short then even as check
+1 even only needs 2 to flip
+2 even same takes 2
+however if 3 then could includes all other groups
+
+Random Variable, Expectation, Variance -5pts 
 
 
 
