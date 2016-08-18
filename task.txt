@@ -1084,7 +1084,7 @@ if you want to be short then even as check
 2 even same takes 2
 however if 3 then could includes all other groups
 
-Random Variable, Expectation, Variance -5pts 
+Random Variable, Expectation, Variance -4pts 
 
 
 
@@ -1092,7 +1092,7 @@ Random Variable, Expectation, Variance -5pts
 =======
 >>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
  
-+12pts
++16pts
 
 <<<<<<< HEAD
 =======
