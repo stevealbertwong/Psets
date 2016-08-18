@@ -1,0 +1,1188 @@
+>70: Stanford, MIT, Cal
+63: Caltec, Carneige Mellon, Princeton, Harvard
+56: Columbia, Cornell, UPenn, Maryland, Michigan, Georgia Tech, Waterloo
+51: UChicago, UT, Washington, UIUC, UCLA, RIT, Harvey Mudd, Middlebury
+47: Northwestern, Duke, JohnHopkins, UVA, Vanderbilt, USC, Lehigh, UCSD, Florida
+42: UMassAmherst, UNC, Buffalo, Davis, Arizona, FSU, Purdue, Stony Brook, VT, Rugters
+35: Temple, Penn State, Drexel, Worcester Polytech, TCNJ, NJIT, SMU, UT Dallas, SUNY Binghamton  
+
+>10: A+
+9: A
+8: A-
+7: B+
+6: B
+5: B-
+
+INTRO
+cs103 4 weeks
+cs41 2 weeks
+cs106a 2 weeks
+cs106b 3 weeks
+cs106l 2 weeks
+cs106x 2 weeks
+cs108 3 weeks
+cs109 4 weeks
+
+SYSTEM:
+cs1u 1 week
+cs107 4 weeks 
+cs110 4 weeks 
+cs140 6 weeks 
+cs240 4 weeks
+cs144 4 week
+cs244 4 weeks
+cs155 4 weeks
+
+DATA STRUCTURE
+cs161 4 weeks
+cs261 4 weeks
+cs166 4 weeks
+cs168 4 weeks
+cs167 4 weeks
+cs267 4 weeks
+
+MACHINE LEARNING
+cs228 4 weeks
+cs221 4 weeks
+Math51 4 weeks
+cs229 4 weeks
+cs231n 4 weeks
+cs224d 3 weeks
+cs224u 3 weeks
+cs224n 3 weeks
+Convex Optimization 5 weeks
+
+MOBILE AND WEB
+cs193p 4 weeks
+cs193a 3 weeks
+cs142 3 weeks
+
+OTHERS
+cs124
+cs246 4 weeks
+cs224w
+21 months
+
+
+Agile Development: 
+-1 hour work = 1 pt
+
+5-28: 
+Read up assign7 -> 4 pts
+Read up CMU malloclab ->2 pts
+
+5-29:
+mycodeschool pointer arithmetic, type casting, void pointer -> 2 pts
+Learn C pointers and struct and data structure -> 2 pts
+mycodeschool malloc, realloc, calloc, free() -> 3 pts
+
+5-30:
+finish up malloc recitiation ->3 pts
+starting reading on 110 mapreduce -> 1pt
+
+5-31:
+reading 110 mapreduce-server.cc -> 3 pts
+MapReduceServer Class 
+unsigned long extractPortNumber(const char* portArgument)
+void initializeFromConfigFile(const std::string& configFilename)
+void applyToServer(const std::string& key, const std::string& value)
+std::string ensureDirectoryExists(const std::string& key, const std::string& path)
+
+6-1:
+110 mapreduce-server.cc
+buildIPAddressMap ->1pt
+
+6-2:
+106b LinkedList::add, get, insert - 3pts
+
+6-3:
+15-213 Virtual Memory6-3:
+
+6-4: 
+106b BinaryTree::print, contains - 2pts
+110 int createServerSocket(unsigned short port, in backlog) - 1pt
+
+6-5:
+learn c ex18 function pointer as callback -1pt
+typedef int (*compare_callback)(int a, int b);
+int* bubble_sort(int a, int b, compare_callback c){
+	if c(a, b)>0{
+	do something..}
+};
+ 
+106b file/io ifstream getline(input, file), open(), close()- 1pt
+
+6-6:
+makefile, files settings dependencies, libraries -2pts
+command make reads in the file Makefile from current directory
+make reassemble, make myprogram, make clean -> build specific target 
+gcc main.cc function1.cc function2.cc -o hello
+
+109 - pset5 titanic + estimating parameter -3pts
+import csv
+open("titanic.csv") as csvfile
+readCSV= csv.reader(csvfile, delimiter=",")
+for row in readCSV // go through each row
+	if (row[3] == "w" && row[1] == "1") // go through each item in the row to get woman in first class
+		women1stClass++
+		if  (row[0] == 1)
+			survived ++
+p = survived / women1stClass
+
+6-7
+109 parameter estimation, method of moments applied on poisson, bernoulli, normal, uniform distribution - 2pts
+106b FirstProgram.cpp HamDaDaDa.cpp -3pts 
+using namespace std = std::cout 
+C++ - #include<iostream>, no public private static shit in c++
+java - printl("Hello" + "world); #import, public static int main();
+c++ - std::cout<< "hello" << "world" << std::endl // standard console output, pacman you are eating the output or less than less than, <<endl if not written then cursor just stay in the same line  
+c - printf
+getline();
+int main() return 0 -> C++ the int goes out to operating system whether program has executed or not, in java main is void 
+parametr sends information into method
+
+wget download all index on apache website-> 1pt
+
+6-8
+Matrix review - reduce echelon form, LU factorization, linearly dependent, inverse, diagonal, upper triangular, gaussian elimination, homogeneous system with trivial solution, generic system, augmented matrix, rank of matrix, gauss-jordan elimination - 1pt
+
+Google Developer tool https://www.youtube.com/watch?v=G74ll-6L4_o - 3pts
+element, networking, resources, console
+JS DataStructure and Algo - 1pt
+143 coursera -1pt
+
+6-9
+VM setup but no login in page, repair file system error- 1pt
+CSE 351 data lab - 1pt
+351 lab0 -1pt
+351 hardware organization, electronic implementation of bits, one memory address correspond to each byte of memory,8 bytes are going ot group tgt to represent 64 bit addressfor x86 machine, address is the first byte of grouped address, 64bits represents word size of the machine/integer size, so we could have 8 gbs different addresses,  
+little vs big endian to order the byte within a word, IA32 vs x86
+big -> most significant byte has lower address i.e. highest order digit 1 in 0x123456 has lowest address
+little -> least significant byte has lower address x86-> little endian 
+pointer is a data object that contains an address that you intepret as an address 
+boolean in theory is 1 bit but in pratice we address data in 1 byte 
+
+Array represents adjacent locations in memory storing same type of data object
+
+6-10
+CSE 351 - showbytes.c print address of pointer + hex representation of the value -1pt
+351 - Boolean algebra + bit level manipulating + bitwise operations
+DeMorgan's law ~(A|B) = ~A&~B intuition -> flip A/B flip to opposite i.e. ~A -> complement of A , | means 1+0 = 1, & means 1+0 =0 so we flip this rule as well
+Bit-level operation
+Logic operation -1pt
+lab2 -1pt
+x86 assembly -1pt
+
+
+6-11
+351 assembly movl %eax, (%edx) -2pts
+351 buffer overflow lab3 -3 pts
+
+
+6-12
+351 stack and registers of void swap(int* x, int* y), moving data between registers and memory, 1st addressing mode: movl 12(%ebp), %eax i.e. traversing the offset on the memory side to get the value vs 2nd addressing mode: movl (%eax) %edx i.e. %eax storing the address so go from register side to address of memory side to get the value  - 2pts
+
+Mining Massive Dataset -3pts
+-distributed file system, cluster architecture: 1. chunk servers 2.master/name node 3.client library for file access 
+-cluster computation challenge: node failure, network bandwidth, complexity -> solution: map-reduce
+- e.g. hostname(URL), size -> find the size of paritcular hostname
+- e.g. unique word, appearance times
+- e.g. count number of times each 5-word sequence occur in a large corpus of documents
+map: scan the document once, creates a map of key and value
+group by key: sort in order
+reduce: reduce/combine the duplicates/multiple occurances into unique occurance result so it can be run in a single node/rack
+most examples querying a distributed file system to get a combined result
+
+- link analysis algorithm to compute importances of a node in a graph
+- e.g. page rank, hubs and authorities
+
+Reading through quiz - 2pts
+ 
+addressing mode e.g. leal, addl, imul, sall 4(%ecx, %eax) - 1 pt
+
+
+6-13
+351 gdb tutorial -3pt
+break main, run, list, disas, step, stepi, help, help info, info registers, x /NUM SIZE FORMAT e.g. x /24wx $rsp i.e. 24 words in hex on the stack 
+x /2wx $rdi, x /s $rdi x /x $rsi
+
+phase 1 defused
+working on phase 2
+target record /target record-full + reverse-step/reverse-next BEFORE step AFTER run -> step back
+
+161- merge sort, 3ways merge sort, x ways merge sort -1pt 
+counting no. of inversions - brute force, steps it takes to become sorted array i.e. piggybanking, recursive brute force 
+
+6-14
+quick sort vs merge sort, randomized quick sort solving ith statistic element, randomly hoping pivot is going to end up as the ith order element we picked, only one side recursive call depending on which side the ith order is compared to the pivot we choose -3pts
+
+graph vs sorting, social network, google map, course selection, meaningful connection between data not just ranking -2pts 
+I still dont understand the number of cuts of n vertices equal to 2^n
+right now I am thinking when a new node gets added, it will create an edge with all exist edges so each time the numbers of edges get double when a node is added.
+adjacent list, max min amount of edges of n vertices = n-1, n(n-1)/2
+
+DFS, getNeighbours, getVertex, neighbour->visited = true, neighbour->previous = vertC, 2014 mid term followers of followers -1pt
+
+
+6-15
+minimum cut problem - 2pts
+if you figure this out, you could become a Stanford PHD.
+161-PS3 -1 pt
+BFS, DFS, Dijkstra's algo -4pts
+
+DFS - Discovery guarantee to find a path if one exists + D if you apply it since only bactrace
+- mark visited, for loop for neighbour node, if stuck backtrace.
+Do Fuckup Shit
+
+BFS - cooler than DFS as it will always find the shortest possible path + implementing queue is harder than backtrace, keep track of path by storing predecessor for each vertex, use up more memory assign2 word letter, breadcrump-> breadth = tried every shortest path
+- queue, mark visited + set n's previous to be v (breadcrumb), for loop for neighbour node + enqueue, dequeue
+Being Fucking Smart
+
+Dijkstra's algo - Cooler than B cause you get a Turing Award, minimum weight path of graph -> create a table of information about currrently known best way to reach each vertex
+mark visited + pqueue + weight
+
+going through all the nodes, keep updating the shortest path to the nodes, if you are in the queue then you are waiting for updates on your minimum cost, if you are dequeued then it is confirmed that it is your minimum cost , if you are enqueue then it is the first time you are considered for minimum cost
+
+priotiy queue can guarantee it is the shortest path when you dequeue for 2 reasons: 
+1. the first node in the pqueue is guaranteed to be the shortest path to that node as all other indirect paths have at least higher cost 
+2. it guarantees it updates the shortest path before dequeuing it as it consider all other shortest paths including its indirect path before considering dequeuing it
+
+prime example of greedy algo
+
+
+6-16
+161 forum post - algo in real world - 1pt
+forum post -PA1 -1 pt
+228 PA1 - 3pts
+
+
+6-17
+EVERYTHING NORMALIZE BECOME PROBABILITY
+WHAT and WHY PGM - conceptual intuition
+FRONTEND of probability + independent of algo i.e. you wont learn any algo + modeling a world of uncertainties   
+
+PGM - model, graphical models, random variables that represents probabilities, bayesian network-> directed graph
+
+
+PGM is a framework -> very large amount of variables + significantly uncertain about the right answer to the result
+
+Model-> declaration representation of understanding of the world, representation of computer that captures our understanding the world in terms of variables and their relationship
+
+Think of the world as a large amount of random variables -> model relationship with joint distribution over possible assignment of certain random variables
+
+Joint distribution: P(x_1, x_2, .... x_n) -> huge possible states, intrinsically exponentially large, ALSO think of it as a table e.g. intelligence, difficulty, grades -> probailitity of every combinations of these 3 random varaibles 
+
+Independent parameter -> values are not determined by other parameters
+
+Conditioning/observing assignment of Grade A -> eliminate all possible assignments of Grade B/C + normalizing/rebase aka reduced probability distribution
+
+Marginalize -> getting rid of intelligence just sum up according to distribution over 
+
+Factor -> a function or a table (x_1, x_2, ...x_n) take all possible assignments in cross-product space i.e. all possible combination of assignments -> gives a real value for each combination 
+e.g. joint distribution is a factor a table fo random varaibles
+e.g. CPD is a factor
+Scope of the factors -> (x_1, x_2, ... x_n) i.e. arguments the factors takes
+
+Factor product -> conditional probability
+Factor maginalization -> same
+Factor reduction -> same delete + renormalize
+
+
+Bae's network -> random variables are represented by nodes
+
+Mark's network -> 
+
+Matlab PA1 FactorTutorial.m -2 pts
+- implement factor data structure
+- AssignmentToIndex([1,2,1],[2,2,2]) //index is 3, [1,1,1] index is 1, [2,1,2] index is 2 etc
+- IndexToAssignment(7,[2,2,2]) //1,2,2
+- GetValueofAssignment
+- SetValueOfAssignment(misspellCar, [1 2 1],6)
+
+PA2 - 2pts
+PA3 -1pt
+
+
+6-18
+
+Structure CPD -1pt
+Tabular representation - naive representation over parents I, D and child G, but real world many factors could cause grades or cough, no. of parents of CPD grows exponentially
+
+Dynamic Bayesian Network -1pt
+Distribution over trajectory 
+Markov assumption - 
+Semi markov model 
+Template transition model 
+Ground Bayesian Network/2 time slice Bayesian Network 
+
+Contextual specific indepedence -
+
+Conditional Independence in bayesian network + navie bayes -1pt
+
+
+
+Markov random fields
+- pairwise markov networks 
+	>> affinity functions, combatabiility function, soft constraints
+	>> local happiness to take a particular joint assignments
+
+
+
+
+6-20
+PGM PA3 -2pts
+
+RunInference.m
+Pairwise, triplet factors 
+Similarity factor 
+
+
+PA4 - 1pt
+Belief Propagation message passing in cluster graph - 1pt
+Clique Tree - Family Preservation + running intersection property -1pt
+PA4 walkthrough by TA -1pt
+
+6-21
+PA4 -forum -2pts
+Java import java.io.*; library-> package -> class -> methods -> properties -1pt
+taxCalculator -1pt 
+calendar class -1pt
+106a array -1pt
+
+6-22
+1. create ec2 instance
+choose EC2, create key pair, choose ubuntu as server for configuration, launch new t1-micro instance and get an instance number, go to EC2 dashboard instance get the hostname of remote machine you launched, amazon assigned a IP address and hostname to you and respond to your request with key pair
+
+2. connect to instance    
+connect with a standalone SSH client-> chmod 400 key-pair.pem-> access through public DNS/hostname
+e.g. ssh -i key-pair.pem root@hostname-amazonaws.com
+
+
+start up engineering hw2-1pt
+done start up engineering -1pt
+cache lab -1pt
+15-213 triple for loop in c to represent matrix multiplication -1pt
+
+
+6-22
+java array-1pt
+andriod activity cycle -2pts
+purple rain -3pts
+graphics + arraylist to creates random raindrop + recursion does not work since will only copy itself + GOval object will store the number of moves + raindrops = addRainDrops + tick = 0, tick++, if tick % 10 == 0 + RandomGenerator.getinstance().nextint(0,getWidth()); + GOval(x, y, DROP_SIZE, DROP_SIZE) + public GOval addraindrop(){return raindrop} raindrop.move(0,2)  
+
+setup node in ams -1pt
+cyberport server
+andriod restful api -1pt
+
+6-23
+I
+marty andriod -> api call and queries + xml to json, getting string from json, e.g. cat images link from api quries
+showing the images on the screen -> 
+GridLayout grid = findViewById(R.id.grid); 
+grid.removeAllViews();
+ImageView imgView = new ImageView(this);
+ViewGroup.LayoutParams params = new ViewGroup.LayoutParams(ViewGroup.LayoutParams.WRAP_CONTENT)
+imgView.setLayoutParams(params);
+Picasso.with(this).load(url).resize(500,500).into(imgView); //fetch the pixals of the image to show on screen
+grid.addView(imgView); 
+
+click button ->
+public void catClick(View view){
+	Ion.with(this).load(url).asString().setCallback(new FutureCallBack<>(String)).onCompleted{processStringData()}} 
+
+
+https://www.youtube.com/watch?v=WxhFq64FQzA&index=185&list=PLQipVWExdXm4fewEo9Qrbcvbdh3EXFSQg
+set up nodejs server in cloud instance amazon ec2 
+
+push the limit -andriod networking -1pt
+	HttpURLConnection -> JSONObject
+
+andriod setup -1pt
+⌥F7 - find all places classes are used
+⌃Space - complete
+F1 - documentation
+
+
+
+6-24
+
+https://developers.google.com/identity/sign-in/android/backend-auth#send-the-id-token-to-your-server
+authentication
+
+- get backend server's OAuth 2.0 client ID + pass server's client ID to requestIdToken
+	>> 
+- after user signs in, retrieve user ID token 
+	>> GoogleSignInResult result = Auth.GoogleSignInApi.getSignInApiFromIntent(data);
+	>> GoogleSignInAccount acct = result.getSignInAccount();
+	>> String idtoken = acct.getIdToken(); // needs to configure Google sign-in with requestIdToken();
+	>> mIdTokenTextView.setText("this is your id token:" + idtoken);
+	>> // create httpurlconnection to send idtoken to server
+- send ID token to server with an HTTP post request
+	HttpClient httpClient = new DefaultHttpClient();
+	HttpPost httpPost = new HttpPost("backend.com/tokensignin");
+	// encode httpPost url  
+	List nameValuePairs = new ArrayList(1);
+	nameValuePairs.add(new BasicNameValuePair("idToken:", idToken); // ??
+	httpPost.setEntity(new UrlEncodedFormEntity(nameValuePairs); // ??
+	HttpResponse response = httpClient.execute(httpPost);
+	
+	// get status code and response body
+	int statusCode = response.getStatusLine().getStatusCode();
+	String responseBody = EntityUtils.toString(response.getEntity()); 
+	Log.i(TAG, "Signed in as:" + responseBody); // ?? TAG
+- server verify ID token
+	// using google API Client library
+	// HTTP 200 response, its boday contains JSONformatted ID token claims
+- server retrieve ID token from sub claim
+
+
+marty database, sql, firebase -2pts
+sql -> Select column From table Where population > 1000 
+	INSERT INTO countries VALUES('SLD', 'ENG', 'T', 100);
+Database managment system -> MYSQL vs PostgreSQL vs SQLite
+
+http://web.stanford.edu/class/archive/cs/cs193a/cs193a.1122/05/
+-> SQLite read
+	SQLiteDatabase db = openOrCreateDatabase("name", MODE_PRIVATE, null);
+	db.execSQL("INSERT INTO counties VALUES (xxx)"); // INSERT or DELETE
+	Cursor cr = db.rawQuery("SELECT id, email FROM students", null); // Cursor -> iterate through result
+	if (cr.moveToNext()){
+		int id = cr.getInt(cr.getColumnIndex("id");	
+		String email = cr.getString(cr.getColumnIndex("email"));
+	while (cr.moveToNext());
+		cr.close();
+
+6-25
+review express -2pts
+- app.listen(80) vs http.createServer(app).listen(80)
+	app.get("/login", middleware, function(req, res){res.send("Login page")}) 
+	// when express server receives a get request and path "/login", if route is found, response object and 
+	// request object are created to passed into parameters of callback function
+
+express-route.js-1pt
+response request object, jade embedded js template engine, res.sendfile, res.json, res.redirect -1pt
+
+
+6-27
+marty Firebase remote database - 4pts
+alias ga="git add ."
+sql to nosql table: use sql to make query vs use map.get 
+mapception
+add stanford android library
+FIREBASE.setValue + security rules write: true WORKS 
+
+
+build.gradle dependencies ??
+Log.wtf ??
+
+Java DataBase Connector library/connector/driver
+- differnet connector depending on your particular kind of database e.g. mysql connector
+- API for connecting to remote database in java code
+- directly querying database in java from android device
+- skip setting up server
+- server is a web layer between client and db: client makes queries by contacting certain specific URLs, server code send appropriate data back 
+- return a cursor object
+	// load JDBC driver and connect to the server
+	String url = "jbdc:mysql://server:port/databaseName";
+	Connection connection = DriverManager.getConnection(url, username, password);
+	// run the query 
+	// resultset(java) is cursor(andriod)
+	Statement statement = connection.createStatement();
+	ResultSet resultset = statement.executeQuery("SELECT name FROM table WHERE name = martin"); // SQL
+	while (resultset.next(){ resultset.getInt("column name")});
+
+
+Firebase
+CONNECTING TO THE DATA
+- install firebase into android build.gradle dependencies + add file exclusion in build.gradle
+- add internet permission to project
+	// initialize Firebase in public void onCreate()
+	Firebase.setAndroidContext(this);
+	// after initialization -> create key value pairing
+	firebase.child("name").setValue(value);
+	
+	// Firebase common methods
+	fb.child("name") // return child data object
+	fb.getKey("value") // return key of a given data value
+	fb.getParent("key") // return map one level up
+	fb.setValue(value, handler) // sets new data value
+	fb.updateChildren(map, handler); // updates objects field i.e. children
+
+6-28
+Database principles e.g. craigslist -2pts
+1. create a table when you want to query it -> SELECT query FROM table
+2. ID is a way to export the row of information to other tables
+3. sql for excel like data e.g. school personal data, stock data, bus schedule
+4. json for categorical data, lightweight sent over internet e.g. craigslist, simple stock data   
+
+auto-generated keys + firebase.child(simpsons/students).push() + @Override ??
+setting, getting data, datasnap object -1pt 
+implementing login, intent exchange between activities, startActivity(intent), query.addChildEventListener, Query query = gradesTable.orderByChild("student_email").equalTo(inputEmail) -1pt
+
+
+6-29
+TODO
+- read ionic cookbook -> figure out database schema + intent exchange
+- facebook database schema
+- firebase documentation -> auth object
+
+
+6-30
+
+Berkeley Admission Quiz app -3pts
+- convert int to string: String.viewof(int); // then pass to button.setText(string);
+- convert string to int: Integer.paseInt(string); // from buttom.getText(); then compare number
+- generate different random int + make sure int generated not the same
+
+Wigets and layout and Text Fields and Container
+
+Layout  
+- layout:alignParentLeft / alignLeft=textView margin = 35dp / centerHorizontal  
+- below=textView margin=140dp / alignTop=textView / alignBottom=textView (overlap the text view) / centerVertical
+
+Event
+- Properties -> onClick identifer -> puts the name of the method 
+
+ImageView
+ListView
+GridView
+RadioGroup
+layout_alignParentX
+layout_marginX
+RelativeLayout
+
+Activity - fundamental units of GUI, a single screen of UI
+View - item that appears on screen in an activity e.g. wigets and layout
+Wigets - button, text view
+Event - click, timer, network data available
+
+	
+7-1
+layout managers- rules that decide how to position each layout
+Layout = ViewGroup = Layout manager = containers of view = Activity
+- described in XML mirrored in Java code 
+- nested layout/custom layout -> combinations of features
+- inside each layout is wigets, attributes
+
+Element(tag), attribute(additional info about the tag), value
+
+<course name="CS193A" instructor="marty>
+
+layout_margin
+gridlayout - layout widget in lines of row and columns e.g. calculator app RARELY USED
+
+relativelayout 
+- each widget position relative to each other, you describe position of wiget relative to other wigets
+
+linear layout
+- layout wigets/views in a single line
+- does not wrap around, falls off the screen if reach the edge of screen
+
+xml is extensible html, you could make up any tags as you want <pizza>
+
+gravity
+- alignment direction widgets are pulled
+- alignment in linear layout is called gravity
+- any stuff inside me move to the other side -> button: layout_gravity="right"
+
+weight
+- size of the wigets, fraction of overall screen
+- 1 out of 1 of all the space thats left, competing with the remaining space with widgets with layout_weight="1"
+
+padding
+- padding makes the widget bigger
+- get the button a little bigger stretching it out
+- after setting the layout width and height to "match_parent" or "wrap_content" or "100dp"
+- dp: device pixel, dip: device independent pixel, sp: scaling pixel
+- match_parent: same size as the layout containers the widget is inside
+
+margin
+- outside of the widget, extra space outside to separate it from others
+
+tablelayout same as gridlayout
+
+APPLICATION
+Composite/nested layout
+- LinearLayout 
+layout_gravity: refers to the gravity of LinearLayout to its parent
+gravity: refers to its sub-widgets' gravity
+WHICH MEANS -> layout gravity:center = button layout_gravity:center
+
+
+7-2
+START COUNTING GETTING NEW NIKE BOOT
+imageButton
+- src="@drawable/img"
+imageView
+
+EditText + Toast.makeText(MainActivity.this, s, Toast.LENGTH_SHORT).show()
+- editable text input box
+
+Linsanity-1pt
+
+Toggle between sunny pictures
+RadioButton -> RadioGroup
+if(view.getId() == R.id.sunny){imgView.setImageResource(R.drawable.sunny)
+
+ListView
+- ordered collection of selectable choices
+- entries="@array/array" // set of options to appear on the list 
+
+static list -1pt
+- content is fixed and known before the app runs
+- populate items in strings.xml -> then import items to activity_main.xml
+- declare list elements in strings.xml res/values/strings.xml
+- res/layout/activity_main.xml <ListView entries="@array/name">
+- res/strings.xml <string-array name="name"> <item>MIT</item>
+
+dynamic list -1pt
+- content is read or generated as the program runs
+- items of the list could come from file or java code
+- list adapters
+
+List adapters
+- ArrayAdapter
+- listView.setAdapter(adapter);
+- listView.setOnItemClickListener(new AdapterView.OnItemClickListener(){public void onItemClick(AdapterView, View, position, id)
+
+
+dictionary app -1pt
+when make anonymous inner class new AdapterView, if you want inner object to see global variable -> add final in front of the global varaible, final = const
+also Toast.makeText(this, "you suck", Toast.LENGTH_SHORT).show() this has to be changed to MainActivity.this -> usually writing code in activity class and this refers to the activity class but now this is inside a new object inside the activity class so the activity/object should be MainActivity.this to refer to MainActviity rather than the tiny little new object this
+
+word-guessing game -1pt
+
+Changes to List data
+
+
+7-3
+
+Reviewing Firebase + List view -1pt
+Reading Firebase doc + sample app -1pt
+https://github.com/firebase/friendlypix/tree/master/android/app/src/main/java/com/google/firebase/samples/apps/friendlypix
+
+@Override
+- if a class inherits a method from its superclass -> override that method provided its not final
+e.g. add method to existing class for inheritance/extends
+
+
+
+
+Firebase readup
+
+https://www.firebase.com/docs/android/guide/user-auth.html#section-storing
+- user is returned in callbacks on the client device
+- user information returned contains a uid (a unique ID)
+- value of auth varaible becomes defined -> no longer null i.e. auth.uid, auth.name
+
+Authentication provider
+- ref.addAuthStateListener, if(authData!=null) // user is logged in
+- AuthData authData = ref.getAuth()
+
+
+Email&Password Auth
+https://www.firebase.com/docs/android/guide/login/password.html
+
+
+Running firebase starter kit -1pt
+https://codelabs.developers.google.com/codelabs/firebase-android/#3
+
+Storing new user login into database
+https://github.com/firebase/firebase-simple-login-java/tree/master/docs/v1
+	myRef.child("users").child(user.getUid()).setValue(map);
+
+Access to Firebase is configure by JSON in firebase console
+
+
+Firebase UI to populate Firebase model
+https://github.com/firebase/FirebaseUI-Android/blob/master/database/README.md
+Recycler view
+- Create a model class to represent database object
+	// creating a model to push to Database
+	Chat msg = new Chat("puf", "1234", "Hello FirebaseUI world!");
+	ref.push().setValue(msg); // pushing an instance of Chat class
+
+- custom recycler/list adapter to map a collection in database to Android
+	// creating a list adapter to populate the RecycleView/ListView from Database
+	mAdapter = new FirebaseRecyclerAdapter(
+	
+- create custom ViewHolder class
+- 
+
+
+7-4
+
+Firebase Android Codelab -4pts
+https://codelabs.developers.google.com/codelabs/firebase-android/#5
+	mGoogleApiClient = new GoogleApiClient.Builder(this);
+	Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+	protected void onActivityResult(int requestCode, int resultCode, Intent data)
+	GoogleSignInResult result = Auth.GoogleSignInApi.getSignInResultFromIntent(data);
+	GoogleSignInAccount account = result.getSignInAccount();
+- the problem of this database is there is only one model (Friendly Message) so each logged in user store their name and message into the only one same database -> 1 collection with everyone's message in it
+
+
+Udacity Firebase datastructure-1pt
+Udacity Android -0.5pt
+
+
+7-5
+Udacity 
+Set up sunshine + 1.01 Add ListItem XML-1pt
+Sunshine arrayadapter + listView.setAdapter -2pts 
+
+Shop++ set up -2pt
+1. Firebase console - create project, add firebase to android, create config file, apply google service plugin
+2. add Firebase/Google library/SDK to build gradle (both app and project level)
+3. set internet permission in Android Manifest
+
+
+7-6
+Shop++ listener + resquest response model -1pt
+get the datasnapshot brings it back to textview -1pt
+fragment_shopping_lists.xml includes single_active_list.xml <include layout="@layout/single_active_list" />
+POJO -1pt
+- write(create instance of shoppinglist class and pass in listname and owner value + setvalue(shoppinglist))- read 
+
+git remote -v // show git repo
+rm -fr .git // remove git init
+git clone -b xxx http//xxx.git
+
+reading up Firebase v2 startup fire-1pt
+
+
+
+
+7-11
+BaseActivity.java
+- deals with login logout for every activities that requires you to login to view
+
+Android Manifest.xml
+<action android:name="android.intent.action.MAIN" /> -> this is the app's entry point
+CATEGORY_LAUNCHER means it should appear in the Launcher as a top-level application, while CATEGORY_ALTERNATIVE means it should be included in a list of alternative actions the user can perform on a piece of data. -> entry point should be listed in the application launcher + Android does not grab whichever one appears first in the manifest but it starts with activity having CATEGORY_LAUNCHER + CATEGORY_LAUNCHER : The activity can be the initial activity of a task and is listed in the top-level application launcher.
+
+LoginActivity -> MainActivity
+
+2 ways to load screen from Activity.java:
+
+1. Activity
+setContentView(R.layout.activity_main);
+
+2. Fragment
+View rootView = inflater.inflate(R.layout.fragment_shopping_lists, container, false); // load GUI layout from XML
+initializeScreen(rootView); // mListView = (ListView) rootView.findViewById(R.id.list_view_active_lists);
+
+Move xml into a new fragment -> then linear layout contain the new fragment in the original xml 
+
+
+7-12
+ViewGroup vs Fragment
+
+Fragment -> fully modularize activity
+
+ArrayListAdapter
+- public constructor: public ActiveListAdapter(Activity activity, Class<ShoppingList> modelClass, int modelLayout, Query ref, String encodedEmail)  
+- populates textViewUsersShopping and textViewCreatedByUser
+
+ShoppingListFragment -> ActiveListDetailsActivity
+
+
+
+7-13
+nike boot start afresh
+
+POJO - model
+- convert simple Java object into Firebase database JSON
+- e.g. making the shopping list an object 
+
+AddListItemDialogFragment
+EditListDialogFragment
+
+LayoutInflater -> run logic of dynamic UI instead of static UI in XML
+Fragment -> getActivity() to get the Activity it is in 
+getMenuInflater().inflate(R.menu.menu_list_details, menu);
+View footer = getLayoutInflater().inflate(R.layout.footer_empty, null);
+Layout inflater converts XML into java widget
+
+View rootView = getAcitivity().getLayoutInflater().inflate(R.layout / mResource, null)
+
+
+
+
+7-14
+layoutinflater is just a converter of XML into View object -> NO event or listener or set/get method or lifecycle 
+
+
+7-15
+Firebase - ShoppingListFragment -> ActiveListDetailsActivity
+updateChildren, setValue, push -1pt
+AddListDialogFragment -1pt
+
+
+
+7-16
+ActiveListAdapter -1pt
+
+
+
+7-17
+Firebase data schema -1pt
+denormalization -> x depth of JSON -> takes data seems to be related in different parts of the app if optimize display in these activities 
+2 way relationship + many to many relationship -1pt
+
+
+7-18
+Data schema -2pts
+
+7-19
+CreateAccountActivity -1pt
+
+
+7-20
+Rasberry Pi + electronics + hardware - 1 whole day
+
+7-21
+LoginActivity -1pt
+ActivityCycle -1pt
+FragmentStatePagerAdapter-1pt
+
+7-22
+Bug: open a new old-platform database console + create a new gradle.properties -1pt
+
+Bug: google-service.json -1pt
+https://developers.google.com/mobile/add
+delete old app -> select android + enter package name + get registered SHA-1
+
+
+Bug: invalid firebase_url -1pt
+gradle properties should be: UniqueFirebaseRootUrl = "https://stevenshoppinglist.firebaseio.com/"
+
+Allows email and password authentication + drawing out forum logic -1pt
+
+passing mEncodedEmail from MainActivity to AddlistDialogFragment by newInstance()-> fragment.setargument(bundle.putstring(encodedEmail) -1pt 
+
+
+
+
+7-23
+to add message to another fragment -1pt
+NEED TO:
+1. update shoppinglist model
+2. update addshoppinglist() in addlistdialogfragment
+3. shoppinglistfragment
+4. activelistadapter
+5. layout.xml
+6. mainactivity and list item fragments
+
+Populate view - 1pt
+Trying to add a like button -1pt
+Still trying to add a like button -1pt
+
+
+7-24
+like button -2pts
+addShoppingList() in addListDialogFragment -1pt
+Utils.updateMapForAllWithValue(null, listId, mEncodedEmail,
+                    updateShoppingListData, "", shoppingListMap);
+updateShoppingListData.put("/" + Constants.FIREBASE_LOCATION_OWNER_MAPPINGS + "/" + listId, mEncodedEmail);
+firebaseRef.updateChildren(updateShoppingListData)
+addFriendActivity -2pt
+
+
+7-25
+ShareListActivity -1pt
+
+7-26
+ShareListActivity -1pt
+FriendAdapter -1pt
+FrontEnd -1pt
+
+
+
+7-27
+Camera take picture and retrieve picture from file -3pt
+fragment into3 -1pt
+InstagramFragment -1pt
+stuck at taking pictures inside fragment -1pt
+Solved fragment to start Camera Activity -1pt
+
+
+7-29
+stuck with actionbar -1pt
+instagram fragment -1pt
+arduino -2pts
+
+7-30
+tablayout + image storage with Firebase -1pt
+android guide on saving files of taken pictures from camera -1pt
+saving pictures to firebase -2pts
+
+7-31
+stuck in camera 
+Camera bug is not solvable since we are accessing the wrong directory -2pts
+Firebase instagram sample - ProfileActivity but i am not using Glide -2pts
+succeeded running Firebase Sample instagram -1pt
+
+8-1
+Firebase Sample Instagram PostFragment -2pts
+RecyclerView, FirebaseRecyclerAdapter, Viewholder review -1pt
+FirebasePostQueryAdapter, PostFragment, PostViewHolder -1pt
+
+
+8-2
+FirebaseRecyclerAdapter -1pt
+RecyclerView.Adapter -1pt
+PostViewHolder -1pt
+You should be ashamed that you want local girls.
+
+8-3
+ContactFragment -2pts
+ContactAdapter -1pt
+Finished Contact List Fragment -1pt
+Arduino -1pt
+
+Recycler.Adapter<viewHolder> - (List<String> paths, OnSetupViewListener onSetupViewListener, Context context, List<Contact> contacts) parameters are anything related to ACTUAL data + onCreateViewHolder: viewHolder(inflate(layout) + onBindViewHolder: viewHolder.mTextView.setText(mContactsArray.get(position).getName())
+i.e. layout only get inflated into ViewHolder when it is called onCreateViewHolder in RecyclerView.Adapter
+ViewHolder is just a public constructor that takes a parameter of an inflate(layout) -> findViewById
+
+FirebaseRecyclerAdapter<User.class, viewHolder> - (User.class, layout, viewHolder, ref) + populateViewHolder(viewHolder, postActualDataPopulated, position)  
+
+FirebaseListAdapter<User.class> - (activity, User.class, layout, ref) + populateView
+
+ArrayListAdapter(activity, layout, ArrayList) + populateView
+
+
+8-4
+InstagramFragment CameraActivity -1pt 
+Firebase setValue vs updateChildren -1pt
+Finish up saving into Firebase -2pts
+FirebaseRecyclerAdapter + ViewHolder + onCreatedViewHolder + onBinderViewHolder -1pt
+
+soccer cleats start afresh
+
+
+8-5
+
+Primitivly implement FirebaseRecyclerAdapter: manually loop through all DatasnapShot to getkey() -> put inan ArrayList<String> -> manually get position add value listener or loop through the list to add  
+	
+	for (DataSnapshot snapshot : dataSnapshot.getChildren())
+	final List<String> postPaths.add(snapshot.getKey());
+	DatabaseReference ref = FirebaseUtil.getPostsRef().child(mPostPaths.get(position))
+	mOnSetupViewListener.onSetupView(holder, post, holder.getAdapterPosition(),dataSnapshot.getKey());
+
+Chat Activity -2pts
+Arduino bluetooth -1pt
+
+8-6
+write to firebase of chats -4pts
+UI -2pts
+
+8-7
+neural nets -2pt
+finish up the app -3pts
+order arduino
+naive bayes classifier movie review just positive and negative -2pts
+naive-bayes classifier in python to classify category of walmart from calculating each word's occurence each category description - srinath, facebook, google, cmu -2pts 
+
+
+8-8
+change package name + record demo -4pts
+
+
+
+
+
+8-10
+machine learning sendtex -3pts
+	Quandl.get("WIKI/GOOGL")
+	df[["Adj. Open", "Adj. High", "Adj. Low", "Adj. Volume"]]
+	df["HL_PCT"] = (df["Adj.High"]-df["Adj.Close"])/df["Adj.Open"]*100
+	df.fillna(-9999999, inplace=True)
+
+	forecast_col = "Adj. Close"
+	forecast_out = int(math.ceil(0.01*len(df)))
+	df("label") = df[forecast_col].shift(-forecast_out)
+	df.dropna(implace=True)
+
+	# convert Dataframe into Array: X->features array, y->label
+	X = np.array(df.drop(['label'],1))
+	X = preprocessing.scale(X)
+	y = np.array(df(['label']))
+	
+	# split df into 80% training and 20% testing
+	X_train, X_test, y_train, y_test = cross.validation.train_test_split(X, y, test_size=0.2)
+	
+	# pick classifer: LinearRegression(), svm(kernal=poly)
+	classifer = LinearRegression()
+	classifer.fit(X_train, y_train)
+	accuracy = classifer.score(X_test, y_test)
+	print(accuracy)
+
+
+cs109 probability -1pt
+
+8-11
+Neural network basic intuition
+
+Neural nets welch labs -1pt
+activation function e.g. sigmoid allows neural nets to model non-linear patterns that simplier model may miss.
+
+Jeff Heaton
+Neural network calculation -1pt
+Neural network is only a way to calculate the weight given input features and output label
+
+UT neural nets -1pt
+Hairbobo sample app -2pts
+
+
+8-12
+Square Error Cost function
+Gradient Descent 3pts
+Partial derivatives-1pt
+Gradient Descent intuition -1pt
+
+
+
+8-13
+Shame -> 8am sleep, blonde, restart
+
+Matlab 229 assign1 plotData.m -1pt
+hypothesis(x) = theta0 + theta1*x -2pts
+to find theta0 and theta1 -> you need to minimize cost function by derivatives and lest square method
+J(theta0, theta1) = 1/2m sum(h(x)-y)^2 where square to ensure positivity, division by 2 easy to calculate
+cost function J(theta0, theta1) calculates the difference between h(x) vs y for each theta0 and theta1
+transition from graph h(x) to J(theta) 
+J(theta) x axis is theta + it is convex since the difference between h(x) and y increases quadrically when slope theta increases
+gradient descent: core idea is differentiate J(theta) and theta to the their rate of change -> 1. if it is big, then means slope or theta is big so much deduction 2. determine positive and negative so that it knows which way to go to reach minimum of J(theta) 
+
+assign1 -2pts
+computeCost.m
+gradientDescent.m
+differentiate in matlab
+
+8-15
+finished assign1 -2pts
+backpropagation -1pt
+<<<<<<< HEAD
+
+8-16
+backpropagation intuition - minimize delta (difference between sum of weighted node and actual output)-> apply gradient descent to try different weight until delta minimize
+delta= (rate of changes of cost function with respect to one incoming node) i.e. adjust weight of incoming nodes using gradient descent algo until delta is minimized
+
+logistic regression is sigmoid classification
+logistic regression 
+
+decision boundaries -1pt
+
+
+8-17
+109 variance -1pt
+=======
+>>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
+ 
++12pts
+
+
+<<<<<<< HEAD
+
+
+=======
+>>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
+DATABASE DESIGN OPTIONS
+1. generate id by push
+2. denormalization or nesting
+3. uidmapping with username
+4. atomic write, multiple updates
+5. duplicate 
+
+
+Firebase Android Sample Instagram 
+https://github.com/firebase/friendlypix/tree/master/android/app/src/main/java/com/google/firebase/samples/apps/friendlypix
+
+
+
+
+
+
+
+THINK ABOUT:
+?? Toolbar setSupportActionBar(toolBar)
+MenuItem
+ViewPager FeedsPagerAdapter Tablayout
+mFab = (FloatingActionButton)
+login token
+Glide.with(MainActivity.this).load(friendlyMessage.getPhotoUrl()).into(viewHolder.messengerImageView)
+LinearLayout linLayout = (LinearLayout)findViewWithTag("layout1");
+dynamic view
+View rootView = inflater.inflate(R.layout.fragment_main, container, false);
+AlertDialog.Builder builder = new AlertDialog.Builder(getActivity(), R.style.CustomTheme_Dialog);
+LayoutInflater inflater = getActivity().getLayoutInflater();
+public Dialog onCreateDialog(Bundle savedInstanceState) 
+        Bundle bundle = new Bundle();
+        addListDialogFragment.setArguments(bundle);
+public void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+    }
+getDialog().getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_VISIBLE);
+public void onActivityCreated(Bundle savedInstanceState) 
+Inheritance: extends AppCombatActivity implements GoogleApiClient.OnConnectionFailedListener{ALL CODE IN THIS PUBLIC ABSTRACT CLASS};
+intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK | Intent.FLAG_ACTIVITY_CLEAR_TASK);
+final SharedPreferences sp = PreferenceManager.getDefaultSharedPreferences(BaseActivity.this);
+menu item xml+ onCreateOptionsMenu(Menu menu) onOptionsItemSelected(MenuItem item) -> show as action
+Fragment vs Dialogue fragment
+public static ShoppingListsFragment newInstance(String encodedEmail) -> use this factory method to create an instance of this fragment
+widget -> floating action button
+public static ShoppingListsFragment newInstance // Create fragment and pass bundle with data as fragment's arguments
+mListView.setOnItemClickListener(new AdapterView.OnItemClickListener() -> what is adapterView
+ShoppingList selectedList = mActiveListAdapter.getItem(position); // ?? there is no getItem() or getRef() + why does it return a model ShoppingList -> shoppinglistfragment.java
+textViewCreatedByUser.setText(mActivity.getResources().getString(R.string.text_you));
+mActivity.getResources() vs Firebase ref
+        <android.support.v7.widget.Toolbar
+HashMap<String, Object> itemToAdd =
+          (HashMap<String, Object>) new ObjectMapper().convertValue(itemToAddObject, Map.class);
+public static AddListItemDialogFragment newInstance that creates new bundle vs protected static Bundle newInstanceHelper that pass in bundle
+protected void doListEdit() of AddListItemDialogFragment -> where is it called ?
+Firebase path update
+// deep-path update
+            HashMap<String, Object> shoppingListMap = (HashMap<String, Object>)
+                    new ObjectMapper().convertValue(newShoppingList, Map.class);
+Utils.updateMapForAllWithValue(null, listId, mEncodedEmail,
+                    updateShoppingListData, "", shoppingListMap);
+
+
+
+
+NATIVE VS IOS ANDRIOD
+
+database set up
+web api to send news/ads to front end 
+nodejs vs python to set up server -20+pts
+authentication -20+pts
+db mongodb? any other choices? -10pts
+android pushing the limit pdf
+android big ranch pdf
+
+
+
+
+Silicon Valley: system architecture, networking, security, getting root access to NSA servers, database rollback
+
+Reading design decisions -> 2 pts
+
+pointer arithmetic, type casting, malloc, realloc, free, sbrk, brk, mmap, memmove, memset-> 12 pts
+open(), strdup(), typedef. 
+int putchar(int c) // putc(c, stdout)
+int fputc(int c, FILE* stream); // writes the character, cast unsigned char to stream
+int putc(intc, FILE* stream);
+
+ 
+
+
+
+
+<<<<<<< HEAD
+
+
+
+=======
+>>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68

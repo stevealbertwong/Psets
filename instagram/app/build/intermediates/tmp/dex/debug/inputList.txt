@@ -1,0 +1,8 @@
+/Users/SteveAndrewWong/Desktop/Psets/instagram/app/build/intermediates/classes/debug
+/Users/SteveAndrewWong/Desktop/Psets/instagram/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-47ab0ebf9fd89d3563c32ef3578fa527171925c7.jar
+/Users/SteveAndrewWong/Desktop/Psets/instagram/app/build/intermediates/pre-dexed/debug/classes-56c74295762e031bca8304a485d34d9cfc572470.jar
+/Users/SteveAndrewWong/Desktop/Psets/instagram/app/build/intermediates/pre-dexed/debug/android-async-http-1.4.6-7e7777fc0356f8b2922aaeb398e28f8a29d1329a.jar
+/Users/SteveAndrewWong/Desktop/Psets/instagram/app/build/intermediates/pre-dexed/debug/picasso-2.4.0-22db1e2fb72b098daef4bf8d32257c196514d445.jar
+/Users/SteveAndrewWong/Desktop/Psets/instagram/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-a4c1de9567df0e8451d55d2da5bcac8735e4652d.jar
+/Users/SteveAndrewWong/Desktop/Psets/instagram/app/build/intermediates/pre-dexed/debug/classes-b2a0b907d76bc2bddb0162d310bb3448d1d3fa06.jar
+/Users/SteveAndrewWong/Desktop/Psets/instagram/app/build/intermediates/pre-dexed/debug/classes-cb0ba2e3669c44c4dbea10dae781864525f98b98.jar

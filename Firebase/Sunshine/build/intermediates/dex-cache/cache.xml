@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/SteveAndrewWong/Desktop/Psets/Firebase/Sunshine/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/libs/internal_impl-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="962e8b12569c56dbdcf8367eb4eac8bb129cd18f">
+        <dex dex="/Users/SteveAndrewWong/Desktop/Psets/Firebase/Sunshine/app/build/intermediates/pre-dexed/debug/internal_impl-21.0.2-3e5456880dea656d3db9fb20a086cafcefd2f221.jar" />
+    </item>
+    <item
+        jar="/Users/SteveAndrewWong/Desktop/Psets/Firebase/Sunshine/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="7ae2d38807a43b2f2185ff4089a92c790b579e54">
+        <dex dex="/Users/SteveAndrewWong/Desktop/Psets/Firebase/Sunshine/app/build/intermediates/pre-dexed/debug/classes-c71934fea6aae331415c78dd3fdc6469fd7a2e8a.jar" />
+    </item>
+    <item
+        jar="/Users/SteveAndrewWong/Desktop/Psets/Firebase/Sunshine/app/build/intermediates/exploded-aar/com.android.support/support-v4/21.0.2/classes.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="d1bf02de1c56d942e7a9d093b8610ba1ef4128e3">
+        <dex dex="/Users/SteveAndrewWong/Desktop/Psets/Firebase/Sunshine/app/build/intermediates/pre-dexed/debug/classes-d881bd4f08ea87df375b72405d814a21b51631ba.jar" />
+    </item>
+    <item
+        jar="/Users/SteveAndrewWong/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/21.0.2/support-annotations-21.0.2.jar"
+        jumboMode="false"
+        revision="21.1.2"
+        sha1="99373741f99a0556ee293c41e8faa1ca3ae8a4e6">
+        <dex dex="/Users/SteveAndrewWong/Desktop/Psets/Firebase/Sunshine/app/build/intermediates/pre-dexed/debug/support-annotations-21.0.2-1dd76e75862e93f665e385ba8d473f53c968a2f5.jar" />
+    </item>
+
+</items>

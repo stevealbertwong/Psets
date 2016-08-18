@@ -1,0 +1,21 @@
+Files:
+1. client-socket.cc
+
+/* establish connection + 
+return a bidirectional socket descriptor for 2-way communication
+with target server's port and host  */
+- createClientSocket()
+	socket(AF_INET, SOCK_STREAM, 0);
+	gethostbyname(host.c_str());
+	memset(&serverAddress, 0, sizeof(serverAddress));
+	serverAddress.sin_family = AF_INET;
+	serverAddress.sin_port = htons(port);
+	return socket
+
+2. map-reduce-server.cc
+/*
+
+*/
+
+-
+ 

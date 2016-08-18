@@ -1,0 +1,46 @@
+/** Lecture 2
+* Threads 
+* Core dumps
+* Address Space
+*
+*/
+
+1. Threads
+- single unique execution context e.g. program counter, stack, registers, execution flags, all the memory states
+- a thread is a resident in processor registers when it is executing on processor i.e. thread having program counter pointing to instruction on address space and register state is updating over time -> thread is running on processor 
+
+
+2. Address space wit translation
+- program execute in address space->DISTINCT from physical machien memory space 
+i.e. a chunk of memory that is used by a thread
+
+3. Process 
+- One or more threads + Address space = Process
+- an instance of an execution program = Process
+- way of packaging threads into a protected context for execution 
+
+4. Protection/ dual mode execution/ privilege
+- OS and hardware are protected from user programs
+- User programs are isolated from one another by controlling translation from program's virtual addresses to machine physical address
+
+
+5. Road map from c code to memory
+- stack to save local variables, recursive call each instance has a stack entry
+- 
+
+6. Instruction cycle
+Processor
+- processor is hardware with program counter
+- program counter points to memory address i.e. next instruction to run
+- an instruction is a set of bits saying what to do e.g. store load memory
+- processor, based on PC, loads instruction from memory address then decode and execute e.g. pull 2 values out of registers and add them with Alrimetic Unit (ALU) goes to memory to load data and then store back to register
+
+Program execution
+- combination of registers and memory states
+
+integer registers vs floating point registers??
+
+7. 
+
+
+?? what is processors and registers

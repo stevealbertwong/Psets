@@ -1,0 +1,42 @@
+/* CS109 Indepedence and Condition independence */ 
+
+The meaning of "if we condition on Fever, the events bacteria and malaria become dependent" is if we look into the world of people having Fever, bacteria or malaria becomes the casue of the Fever
+
+"They are dependent because if you tell me information about one it will change my belief of the other"
+
+“If we condition on Fever, the event of Bacteria and Malaria become dependent s.t. the knowledge that Malaria exists when Fever happens changes my belief that Bacteria is also present as those are the 2 different things that cause Fever.” -> vs in the normal world the fact that a person has Bacteria tells me nothing about whether he has Malaria. However if you tell me Fever has happened my belief that there is either Bacteria or Malaria skyrocketed, the fact that such person has Malaria explains the Fever and thus belief of Bacteria goes back to normal world.
+
+"Current belief of the world" -> the empirical cause of the world/condition
+
+
+Condition means the world we are interested in
+Events are the empircal cause we are interested in 
+Dependent means the event/empircal potentially could be the cause/changes our belief/such condition might be casued by another event. If we further condition of such events, our belief will change again. i.e. when we look into the world that malaria as a cause of fever by P(Bateria|Fever and Malaria) conditioning on Malaria, our belief in Bacteria as a cause such probability will drop back to the base line again since Malaria is so frequent in the statistic s.t. Malaria is the cause and Bacteria is not the cause in such a world.
+
+If you tell me Malaria happen and causing such Fever, my belief that Bacteria is the cause goes back to the normal case.
+
+“When we condition on Fever, Bacteria and Malaria become dependent”
+
+
+/* Logistic regression */ aka sigmoidal classification
+
+Logistic Regression is most used classifier in ML -> either class 1 or 0
+Sigmoid function -> any S shape curve
+
+Sigmoid is chosen is 
+1. output between 0~1 from pheta transpose x
+2. smooth so that take derivative of sigmoid in easy way
+-> right now think of it as practical
+
+Steps of logistic regression
+1. make logistic regression assumption
+2. calculate log probability for all data -> optimize log likelihood with respect to theta
+i.e. choose photo that makes likelihood maximum
+3. to maximize, calculate the derivative of log probability with respect to theta
+
+?? what is e in sigmoid 
+?? why log likelihood
+
+Logistic regression training pseudo code
+1. loop over training instance in dataset to add contribution to the "batch" gradient vector
+2. compute partial derivative of log likelihood with respect to theta

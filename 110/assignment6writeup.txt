@@ -1,0 +1,29 @@
+v1
+initial code base responds to all http requests with "HTTP/1.0" version string + 200 status code + "OK" message
+
+Overview of the code
+-blacklist.cc
+1.
+
+-cache.cc
+1.
+I
+-proxy.cc
+
+-request.cc
+1. ingestPayLoad()
+2. ingestRequestLine()
+3. ingestHeader()
+
+-response.cc
+
+
+-requestHandler.cc (Most of your code is here)
+1. int createClientSocket(host, port)
+2. serviceRequest()
+
+
+-scheduler.cc
+
+-threadpool.cc
+

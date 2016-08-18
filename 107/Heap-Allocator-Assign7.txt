@@ -1,0 +1,49 @@
+
+
+/* 107 heap allocator summary 
+Design and implement the malloc, realloc, free, validate_heap, init and provide their interface as the standard libc allocator
+
+*/
+
+TASKS:
+1. Error handling 
+- e.g. realloc stack addresses, free already freed pointer, overruns the end of allocated block
+- respond by crashing or corrupting heap
+- name mymalloc, myrealloc, myfree -> avoid crushing  
+
+2. Size of allocated block
+- INT_MAX bytes to limit maximum request size, if requested allocate block larger than maximum size -> return NULL
+- ALIGNMENT contant (8) 
+- every alllocated block must be aligned to an address that is a multiple of ALIGNMENT CONSTANT
+
+3. Segment.h
+- heap segment is a large contiguous region of memory obtained from OS
+
+AFTER RANDOM SEARCH ON GITHUB, I IMAGINE segment.h and segment.c look like this
+
+// does all malloc for segments
+- segments_alloc(long length, long minNum): 
+create typedef struct segments{length, minNum, *vectorContentPtr, **strings} named segmentsPtr
+segmentsPtr = (segments_t*)malloc(sizeof(segments_t));
+segmentsPtr->strings = (char**)malloc(minNum * sizeof(char*)); //preallocate minNum of segments
+string = (char*)malloc(minNum * (length+1) * sizeof(char)); //malloc string
+segmentPtr->string[i] = &string[i*(length+1)] // populating segmentPtr -> stringPtr with string contents
+segmentPtr->contentsPtr = vector_alloc(minNum);
+
+//populates contentPtr
+- segments_create
+- segments_free
+
+4. Static Global Data/Variable
+- limited to 500 bytes for heap housing keeping
+- store in heap segment	
+- e.g. block header/footer, data structure, separate table/list of block information 
+- throughput counts the number of requests serviced per second 
+- utilization -> if 100 blocks fo size 32 is allocated and heap segment is size of one page 4k, utilization ratio is 32*100/4096 = 78%
+
+5. Design
+- 
+
+ 
+ 
+ 

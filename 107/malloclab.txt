@@ -1,0 +1,55 @@
+/* 15-231 malloc recitation */
+
+1. Marcos:
+
+DEFIN:
+Marcos - mechanism in c before program gets compiled could do find and replace
+e.g. 
+#DEFINE NUM_ENTRIES 100 // define constant 
+#DEFINE twice(x) (2*(x)) // define simple operation or function, wrap in () since naive search and replace
+
+
+USAGE:
+- faster than function calls -> since NO call queue, calling conventions with function calls: moving stuff into register, jump, stack pointer, when we are done undo all of that jump back to where we were before. 
+- search and replace -> allows us to updates all occurence at once.
+- e.g. macros ideal way for quick access to header information (payload size, valid, keep track of blocks of memory freed)
+
+
+2.Inline function:
+
+DEFIN:
+Inline an existing function -> at compile time replaces function calls with code-> so no need to do stack conventions as it is not making a call
+add inline at the beginning of the function
+
+USAGE:
+- getting full benefit of type checked arguments
+- useful for functions that are called frequently 
+ 
+
+
+3. Pointer review:
+i.e. casting, dereferencing, arithmetic
+
+CASTING:
+Casting from pointer type a to pointer type b
+
+Casting from pointer type a to int/unsigned int 
+
+- all pointers are 8 types long interger in 64 bits system
+- just changing the intepretation what kind of pointer it is
+ 
+??? writing pointer into location as number you are manipulating 
+contructing pointer directly by doing arithmetic on them
+
+POINTER ARITHMETIC
+- pointer + 1 -> address of the pointer + 1*size of the pointer type 
+e.g. 
+int* pointer = something;
+(void*) pointer2 = (void*) (pointer+2);
+this is really computing -> pointer2 = pointer + (2*sizeof(int));
+in assembly -> lea (i.e. load effective address) lea (pointer, a, sizeof(int)), pointer2;
+
+ 
+
+/* assignment write up */
+
