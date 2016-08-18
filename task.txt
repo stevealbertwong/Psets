@@ -1085,6 +1085,11 @@ if you want to be short then even as check
 however if 3 then could includes all other groups
 
 Random Variable, Expectation, Variance -4pts 
+Expectation and variance is so extra: you want to stress there can not be probability in random variable since it goes to infinity, but then you change the probability to frequency to say that there could still be population mean of an random event if you add up all different probabilities of a random event happening
+
+First ask: what is the probability of getting head out of 1 toss
+Then ask: now how about probability of getting heads out of 6 tosses
+now you are stuck so you invent Random Variable, Expectation and Variance
 
 
 
