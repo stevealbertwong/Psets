@@ -1091,6 +1091,9 @@ First ask: what is the probability of getting head out of 1 toss
 Then ask: now how about probability of getting heads out of 6 tosses
 now you are stuck so you invent Random Variable, Expectation and Variance
 
+8-19
+106b marty Binary tree and binary search tree lecture review -2pts
+
 
 
 
