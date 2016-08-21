@@ -1096,6 +1096,8 @@ now you are stuck so you invent Random Variable, Expectation and Variance
 
 
 
+8-20
+Expected value 
 
 =======
 >>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
