@@ -1109,6 +1109,8 @@ Implementing Authentication in php mysql
 Register username and password
 cyto algo to encrypt password 
 Basic Authentication using php, .htaccess, mode_auth_mysql
+
+
  
 8-22 
 Session control
