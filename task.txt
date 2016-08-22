@@ -1097,7 +1097,22 @@ now you are stuck so you invent Random Variable, Expectation and Variance
 
 
 8-20
-Expected value 
+Expected value -3pts 
+
+8-21
+Luke Welling Php mysql webdevelopment -2pts
+Chapter 9
+Accessing Mysql database from web with php e.g. write and query data from database 
+
+Chapter 17
+Implementing Authentication in php mysql 
+Register username and password
+cyto algo to encrypt password 
+Basic Authentication using php, .htaccess, mode_auth_mysql
+ 
+8-22 
+Session control
+
 
 =======
 >>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
