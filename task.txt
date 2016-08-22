@@ -1114,6 +1114,9 @@ Basic Authentication using php, .htaccess, mode_auth_mysql
  
 8-22 
 Session control
+Mysql setup -1pt
+
+
 
 
 =======
