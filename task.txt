@@ -1124,6 +1124,7 @@ Download XAMPP to set up phpmyadmin
 Install Mysql on your mac 
 
 
+8-23
 
 
 
