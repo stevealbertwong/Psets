@@ -1114,7 +1114,15 @@ Basic Authentication using php, .htaccess, mode_auth_mysql
  
 8-22 
 Session control
-Mysql setup -1pt
+
+https://www.youtube.com/watch?v=q9S51sykd1A
+Mysql setup -3pts
+
+Still stuck at using workbench vs phpmydmin
+Downloaded older version 5 of workbench
+Download XAMPP to set up phpmyadmin
+Install Mysql on your mac 
+
 
 
 
@@ -1213,6 +1221,9 @@ open(), strdup(), typedef.
 int putchar(int c) // putc(c, stdout)
 int fputc(int c, FILE* stream); // writes the character, cast unsigned char to stream
 int putc(intc, FILE* stream);
+
+
+
 
  
 <<<<<<< HEAD
