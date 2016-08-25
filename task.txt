@@ -1131,6 +1131,14 @@ Poissom 1pt
 8-24
 106b C++ LinkedList.cpp -1pt
 
+8-25
+Nosql vs sql intuition -1pt
+nosql store data in memory using primative data strucutre whereas sql has a preset schema that is like a struct. When you install mysql it is like a C program that have preset methods allocate memory. Then when you CREATE TABLE students(first_name VARCHAR(30) NOT NULL, student_id INT UNSIGNED NOT NULL AUTOINCREMENT PRIMARY KEY); it creates a huge struct and if data did not get written into certain table it is wasted. It is like pre-announcing 1000k of memory stick together since they are all related and relevant to my search. i.e. very likely my search is going to need all these memory data together. However for data of very different types and complicated structures no or a customable schema is more suitable. 
+
+
+ 
+
+
 =======
 >>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
  
