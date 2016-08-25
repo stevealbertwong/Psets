@@ -1,3 +1,11 @@
+#include "BinaryTree.h"
+#include <iostream>
+#include <string>
+
+
+BinaryTree::BinaryTree(TreeNode* initialRoot){
+	root = initialRoot;
+}
 
 void BinaryTree::print(){
 	TreeNode* node = new TreeNode();

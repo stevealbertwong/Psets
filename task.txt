@@ -1135,9 +1135,19 @@ Poissom 1pt
 Nosql vs sql intuition -1pt
 nosql store data in memory using primative data strucutre whereas sql has a preset schema that is like a struct. When you install mysql it is like a C program that have preset methods allocate memory. Then when you CREATE TABLE students(first_name VARCHAR(30) NOT NULL, student_id INT UNSIGNED NOT NULL AUTOINCREMENT PRIMARY KEY); it creates a huge struct and if data did not get written into certain table it is wasted. It is like pre-announcing 1000k of memory stick together since they are all related and relevant to my search. i.e. very likely my search is going to need all these memory data together. However for data of very different types and complicated structures no or a customable schema is more suitable. 
 
-Linked list -1pt
+cs106b Linkedlist.cpp ListNode.h LinkedListClient.cpp -1pt
+pointer is the only way to concatenate memory together as it stores the memory address of the other datatype
 
- 
+BinarySearchTree Intuition -2pts
+adds and containsm traverse through the tree
+
+DFS in code C++ intuition -2pts
+see http://www.codewithc.com/depth-first-search-in-c/
+
+
+
+
+
 
 
 =======
