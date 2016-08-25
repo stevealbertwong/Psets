@@ -1150,15 +1150,10 @@ see http://www.codewithc.com/depth-first-search-in-c/
 
 
 
-=======
->>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
  
 +12pts
 
-<<<<<<< HEAD
-=======
->>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
-DATABASE DESIGN OPTIONS
+DATABASE PRINCIPLES
 1. generate id by push
 2. denormalization or nesting
 3. uidmapping with username
