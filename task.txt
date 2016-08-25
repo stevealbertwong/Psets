@@ -1249,5 +1249,4 @@ int putc(intc, FILE* stream);
 
 
  
-<<<<<<< HEAD
 >>>>>>> 1ce14aec895bcd1c8f0474293af8e1ef07828e68
