@@ -1174,6 +1174,10 @@ Node *insertRec(Node *root, int point[], unsigned depth)
 
 SEE: http://www.geeksforgeeks.org/k-dimensional-tree/
 
+
+
+
+BFS code intuition -2pts
 DFS - use stack + keep a visited array 
 BFS - use queue + visited array 
 
