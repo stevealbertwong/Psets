@@ -1146,10 +1146,70 @@ see http://www.codewithc.com/depth-first-search-in-c/
 
 8-26
 KD tree code intuition -1pt
+recursion: 
 
+// Inserts a new node and returns root of modified tree
+// The parameter depth is used to decide axis of comparison
+Node *insertRec(Node *root, int point[], unsigned depth)
+{
+    // Tree is empty?
+    if (root == NULL)
+       return newNode(point);
+ 
+    // Calculate current dimension (cd) of comparison
+    unsigned cd = depth % k;
+ 
+    // Compare the new point with root on current dimension 'cd'
+    // and decide the left or right subtree
+    // Node* root is updated to root->left so traverse down the node
+    // i.e. root->point[cd] ==> root->left->point[x] //if on x dimension comparison
+    // i.e. point[x] < root->left->point[x] // 2,3 vs 12,7 ----> 2 < 12
+    if (point[cd] < (root->point[cd]))
+        root->left  = insertRec(root->left, point, depth + 1);
+    else
+        root->right = insertRec(root->right, point, depth + 1);
+ 
+    return root;
+}	
 
+SEE: http://www.geeksforgeeks.org/k-dimensional-tree/
 
+DFS - use stack + keep a visited array 
+BFS - use queue + visited array 
 
+// INTUITION: rear->next ==> 002->next = 003 then 002->next(i.e.003)->next = 004 etc. as long as you have an updated rear
+void Queue::enqueue(int data)
+{
+    node *temp = new node();
+    temp->info = data;
+    temp->next = NULL;
+    if(front == NULL){
+        front = temp;
+    }else{
+        rear->next = temp;
+    }
+    rear = temp;
+}
+
+// INTUITION: front->next means goes to address 010, dereference it to get the actual node, and then get the Node* next which is the next node's address
+// therefore when we first enqueue: rear->next = front->next when enqueue 
+// e.g. when first enqueue 0x010 front = 0x010 rear =0x010: rear->next means goes 0x010, dereference to write next address i.e. 0x020
+// when dequeue front->next = 0x010 deference, get next, 0x020
+int Queue::dequeue() {
+    node *temp = new node();
+    int value;
+    if(front == NULL){
+        cout<<"\nQueue is Emtpty\n";
+    }else{
+        temp = front;
+        value = temp->info;
+        front = front->next;
+        delete temp;
+    }
+    return value;
+}
+
+SEE: http://www.codewithc.com/breadth-first-search-in-c/
 
  
 +12pts
