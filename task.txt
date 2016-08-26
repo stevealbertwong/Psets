@@ -1144,7 +1144,8 @@ adds and containsm traverse through the tree
 DFS in code C++ intuition -2pts
 see http://www.codewithc.com/depth-first-search-in-c/
 
-
+8-26
+KD tree code intuition -1pt
 
 
 
