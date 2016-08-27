@@ -13,6 +13,8 @@ using namespace std;
  * This function is called a SAX hash function (Shift-Add-XOR) and is
  * great at distributing strings evenly.
  */
+
+ // like a random number generator
 const int kHashMask = 0x7FFFFFFF;
 int hashCode(string key) {
     int hashVal = 0;
@@ -23,6 +25,10 @@ int hashCode(string key) {
     }
     return hashVal & kHashMask;
 }
+
+
+
+
 
 /* * * * * Implementation of OurHashMap. * * * * */
 
@@ -74,6 +80,11 @@ bool OurHashMap::isEmpty() {
 	return size() == 0;
 }
 
+
+
+
+
+
 bool OurHashMap::containsKey(string key) {
 	/* Determine which bucket this key, if it exists here, must be in. */
 	int bucketIndex = hashCode(key) % numBuckets;
@@ -98,6 +109,13 @@ int OurHashMap::get(string key) {
 
 	error("You must be a stranger in these here parts.");
 }
+
+
+
+
+
+
+
 
 void OurHashMap::put(string key, int value) {
 	/* This key might already be here, in which case we should look up
@@ -129,12 +147,27 @@ void OurHashMap::put(string key, int value) {
 	numElems++;
 }
 
+
+
+
+
 // TODO: Implement rehashing!
-/*
+
+
+/**
+ * 1. if totalElements/numBuckets > 3
+ * 2. for loop get all the values -> then store them in an array
+ * 3. get new numBucket 
+ * 4. run void OurHashMap::put over the stored array of elements with a new numbuckets
+ */
+
 void OurHashMap::rehash() {
 	// TODO: Fill this in!
 }
 
-*/
+
+
+
+
 
 

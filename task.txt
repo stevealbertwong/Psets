@@ -1216,12 +1216,39 @@ int Queue::dequeue() {
 SEE: http://www.codewithc.com/breadth-first-search-in-c/
 
 8-27
-Hashing into array uses key itself as an address into the data structure -> guarantee O(1) -> whereas BST due to its comparison tree data structure -> guarantee O(logN) for searching
+Tutorial on hashing for look up 
+Hashing into array uses key itself as an address into the data structure, convert key into address through integer key -> guarantee O(1) -> whereas BST due to its comparison tree data structure -> guarantee O(logN) for searching
 
-The idea for hashing is that it is super easy for searching and look up -> but no concept for add and delete + clash of address 
+The idea for hashing is that it is super easy for searching and look up -> but no concept for add and delete + clash of address collision + convert string into table address
 
+Applications:
+Compiler, a hash table will likely be used for keyword and identifier storage because a compiler needs quick access to this information + optimizing switch statements 
+// what is keyword and identifier storage???
 
+Implementation of a cache, and many web browsers and operating systems will use a hash table for just that.
+
+Cryptography, where algorithms that are geared more toward security are used to create digital fingerpints for authentication and data integrity.
+
+The quality of hashing depends on probability it generates
+e.g. add-shift-xor produces 2^11*n combination where n is number of char in string
+Normal 8 passwords combination produces 88^8 --> e15 combination
+e15: shift to the left 15 digits or 1 times 10 to the power of 15
+
+see: https://www.lamission.edu/learningcenter/docs/mathlab/Symbols_Notations/what%20does%20E%20mean%20on%20a%20calculator.pdf
+
+bool OurHashMap::containsValue(string key){
+	int bucketIndex = hashMap(key) % numBuckets;
+	// forloop run through the bucket 
+};
+
+Behind MongoDB is a giant hash algorithm 
+nosql they just hash data into a memory address and therefore super quick look up but the data stored in each bucket /cell related to each other in meaningless way and so unless one defines data schema beforehand we could not get relational or query feature
+
+Distributed evenly: shifting bits and xor operations does not create a pattern + hit every numbers after hash
+
+See: http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_hashing.aspx
  
+Hashmap code -keith intuition + rehash intuition -2pts
  
 +12pts
 
