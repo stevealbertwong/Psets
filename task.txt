@@ -1215,6 +1215,13 @@ int Queue::dequeue() {
 
 SEE: http://www.codewithc.com/breadth-first-search-in-c/
 
+8-27
+Hashing into array uses key itself as an address into the data structure -> guarantee O(1) -> whereas BST due to its comparison tree data structure -> guarantee O(logN) for searching
+
+The idea for hashing is that it is super easy for searching and look up -> but no concept for add and delete + clash of address 
+
+
+ 
  
 +12pts
 
