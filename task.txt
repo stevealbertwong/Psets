@@ -1288,7 +1288,7 @@ Most fundamental system calls has to be written in assembly
 
 8-30
 
-Kernel programming interface/ system call interface/ functional interface -2pts
+Kernel programming interface/ system call interface/ functional interface -4pts
 functionality operating system provides to users application program
 
 Process managment
