@@ -1249,6 +1249,82 @@ Distributed evenly: shifting bits and xor operations does not create a pattern +
 See: http://www.eternallyconfuzzled.com/tuts/algorithms/jsw_tut_hashing.aspx
  
 Hashmap code -keith intuition + rehash intuition -2pts
+
+
+
+8-28
+Qt creator creating class and object debugging - 2pts
+
+8-29
+tutorial
+library card research paper 
+
+START OF OPERATING SYSTEM MARATHON
+operating system intuition -3pts
+
+file system
+it is like creating file objects with meta data of memory address, directories and files it contains
+
+path 
+when you cd the path, you are traversing the nodes of memory addresses
+
+io
+50% system crashes come from device drivers
+
+memory mapped i/o
+maps each device's control registers to a range of physical address on memory bus, meaning reading and writing memory by CPU does not go to main memory but directly to registers on I/O devices' controller
+
+clock algorithm
+requesting pages when memory is low
+
+kernel 
+protect certain processes
+part written in assembly, part written in c
+
+DMA 
+DMA transfer between DRAM(main memory) and SSD(secondary memory) 
+
+Most fundamental system calls has to be written in assembly
+
+8-30
+
+Kernel programming interface/ system call interface/ functional interface -2pts
+functionality operating system provides to users application program
+
+Process managment
+concurrency, mutlitasking, creating a new instance of itself
+User-level process management e.g. C compiler shell commnad line interpreter -> compile c files into objects files and linked all object files into executable with multiple processes
+
+Thread management
+
+I/O
+
+Memory management
+
+Design/where to put operating system functionalty/system call interface
+1. user level program e.g. login
+2. user level library linked in application e.g. user interface widgets
+3. system call
+4. system call in standalone server processes invoked by kernel
+
+
+Examples fo system call:
+fork()
+exec()
+
+
+
+Paper topics:
+1. reduce system crashes due to drivers + standardize interfaces to these devices
+2. a new matching algorithm to match applicants to college in hong kong
+
+Stupid topics:
+1. Multi-threading in C using library that is later added does not work - but how to make it work though?
+
+
+
+
+
  
 +12pts
 
