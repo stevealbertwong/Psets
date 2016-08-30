@@ -1318,6 +1318,11 @@ Inode store meta of a directory or file
 Most important part of metadata is block of memory address of its content/files it contains
 Each file/directory has its inode/metadata
 
+Set up pintos environment -2pts
+Question i still dont understand: why pintos could make + pintos run-multiple alarm but mac could not even make????????????????????????????
+
+
+
 e.g.
 when ls -l in home directory
 1. HomeDirectory inode -> contains the block of memory that stores all files names + inode memory address
