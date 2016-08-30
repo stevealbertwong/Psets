@@ -1313,6 +1313,22 @@ fork()
 exec()
 
 
+Inode:
+Inode store meta of a directory or file 
+Most important part of metadata is block of memory address of its content/files it contains
+Each file/directory has its inode/metadata
+
+e.g.
+when ls -l in home directory
+1. HomeDirectory inode -> contains the block of memory that stores all files names + inode memory address
+2. if its is file -> then inode contains block of memory of its content
+3. if its is folder -> follow inode to memory address -> get all directory content + each inode get metadata
+
+
+
+
+
+
 
 Paper topics:
 1. reduce system crashes due to drivers + standardize interfaces to these devices
@@ -1323,10 +1339,11 @@ Stupid topics:
 
 
 
++17pts
 
 
- 
-+12pts
+
+
 
 DATABASE PRINCIPLES
 1. generate id by push
