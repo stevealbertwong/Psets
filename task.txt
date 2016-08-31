@@ -1331,13 +1331,30 @@ when ls -l in home directory
 
 
 
+8-31
+basic-fork.c -1pt
+grandparents pid always 21130
+parent's pid always random
+childs pid always random + 1
+when parent finishes before child: child getppid(): 1, if parents not yet finish getppid returns parent's pid
+child pid_t/return value is always 0 
 
+thread.c -1pt
+what is nice value + mlfqs?????????
+what is page?????
+what is thread's kernel stack vs struct thread ???
+why are they sharing page??
+what is a magic member of running thread's 'struct thread' is set to THREAD_MAGIC???? 
+why when kernel stack or struct thread grows too large, causing stackoverflow would change the value of THREAD_MAGIC??? 
+what is actual priority after donation??
+what is absolute ticks to wake up current threads
 
 
 
 Paper topics:
 1. reduce system crashes due to drivers + standardize interfaces to these devices
 2. a new matching algorithm to match applicants to college in hong kong
+3. download if stop or interrupted, no loss of data
 
 Stupid topics:
 1. Multi-threading in C using library that is later added does not work - but how to make it work though?
