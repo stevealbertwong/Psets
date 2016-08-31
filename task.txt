@@ -1352,12 +1352,19 @@ why when kernel stack or struct thread grows too large, causing stackoverflow wo
 what is actual priority after donation??
 what is absolute ticks to wake up current threads
 
+loader.S -1pt
+16-bit segment
+
+Finished reading paper about compiler does not work well with multithreading in C -2pts
+
 
 
 Paper topics:
 1. reduce system crashes due to drivers + standardize interfaces to these devices
 2. a new matching algorithm to match applicants to college in hong kong
 3. download if stop or interrupted, no loss of data
+4. new compiler and language to write operating system since multithreading cannot be implemented with just library + new ways for website to sequentially load up images and video e.g. youtube, a different way to do advertisement for multithreading 
+ 
 
 Stupid topics:
 1. Multi-threading in C using library that is later added does not work - but how to make it work though?
