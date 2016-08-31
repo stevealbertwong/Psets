@@ -1365,7 +1365,6 @@ Paper topics:
 3. download if stop or interrupted, no loss of data
 4. new compiler and language to write operating system since multithreading cannot be implemented with just library + new ways for website to sequentially load up images and video e.g. youtube, a different way to do advertisement for multithreading 
  
-
 Stupid topics:
 1. Multi-threading in C using library that is later added does not work - but how to make it work though?
 
