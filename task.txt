@@ -1373,6 +1373,12 @@ palloc.c
 Maryland: stack push and poping -2pts 
 see: https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/Mips/stack.html
 
+RISC - reduced instruction set computing
+CPU design a simplified instruction set provides higher performance when combined with microprocessor cycles per instruction 
+
+Directly-mapped cache
+
+
 
 
 Paper topics:
@@ -1389,7 +1395,7 @@ Stupid topics:
 
 
 
-+17pts
++20pts
 
 
 
