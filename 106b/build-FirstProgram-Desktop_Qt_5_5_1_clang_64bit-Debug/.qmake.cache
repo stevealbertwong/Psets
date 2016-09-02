@@ -1,4 +1,0 @@
-QMAKE_TARGET_BUNDLE_PREFIX = \
-    Steven \
-    Andrew \
-    Wong
