@@ -1362,6 +1362,17 @@ Finished reading paper about compiler does not work well with multithreading in 
 9-1
 cs162 Introduction to processes -1pt
 
+cs140 reading through assignment 1 - 2pts
+interrupt.c
+switch.S
+palloc.c
+
+
+
+9-2
+Maryland: stack push and poping -2pts 
+see: https://www.cs.umd.edu/class/sum2003/cmsc311/Notes/Mips/stack.html
+
 
 
 Paper topics:
@@ -1372,6 +1383,9 @@ Paper topics:
  
 Stupid topics:
 1. Multi-threading in C using library that is later added does not work - but how to make it work though?
+
+
+
 
 
 
