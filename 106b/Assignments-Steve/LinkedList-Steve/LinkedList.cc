@@ -1,7 +1,10 @@
+#include "LinkedList.h"
+
 void LinkedList::add(int value){
 while(current->next!=NULL){
 	current = current->next; // walk till the end of the list
 };
+
 current->next = new ListNode(value);
 
 int LinkedList::get(int index){
