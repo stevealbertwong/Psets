@@ -1,7 +1,9 @@
 #include "LinkedList.h"
 
-int main(int argc, char const *argv[])
+int main()
 {	
+	// ListNode* node = new ListNode(40); // demo of struct ListNode
+
 	LinkedList linkedList;
 
 	

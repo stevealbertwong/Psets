@@ -1,28 +1,70 @@
+/*
+Linked List is just an array in C++ but from ground up
+
+Vector, list, map are all abstraction, or one varaiable that 
+let you reach all data
+
+*/
 #include "LinkedList.h"
 
-void LinkedList::add(int value){
-while(current->next!=NULL){
-	current = current->next; // walk till the end of the list
-};
+LinkedList::LinkedList(){
+	// front has to remain unchanged
+	front = NULL; // initialize member variable to NULL
+	
+	/* or you could initialize to a node with 0 as data */
+	// front = new ListNode;
+	// front->data = 0
+	// front->next = NULL
+}
 
-current->next = new ListNode(value);
+LinkedList::~LinkedList(){
 
-int LinkedList::get(int index){
-	ListNode* current = front; 	
-	for (int i =0, i<index, i++){ // walk the list for (int index) steps 
-		current = current->next;		
+}
+
+void LinkedList::Add(int value){
+	// initialize first node
+	if (front = NULL){
+		front = new ListNode(value);		
+		// front->next = NULL;	// X explicitly say null -> already null by default
 	}
-	return current->data // dereference pointer to retrieve value	
-};
+
+	else{
+		// traverse to last node where current->next is NULL
+		ListedNode* current = front;
+		while (current->next != NULL){
+			current = current->next;
+			current->next = new ListNode(value);						
+		}
+	}
+}
 
 
-void LinkedList::insert(int index, int value){
-ListNode* current = front;
-for (int i = 0, i< index-1, i++){ // walk the list (int index - 1) steps
+int LinkedList::Get(int index){
+	ListedNode* current = front;
+	for (int i = 0; i < index; ++i)
+	{
+		current = current->next;
+	}
+	return current->data;
+}
+
+int LinkedList::Insert(int index, int value){
 	ListNode* temp = new ListNode(value);
-	temp->next = current->next // point the new node to next node
-	current->next = temp // update the current node to point to new node	
-};
+	
+	ListNode* current = front;
+	for (int i = 0; i < index-1; ++i) // walk the list (int index - 1) steps
+	{
+		current = current->next;
+	}
+
+	temp->next = current->next;
+	current->next = temp;
+}
+
+
+
+
+
 
 void LinkedList::remove(int index){
 	
