@@ -1383,8 +1383,10 @@ Arraylist.cpp -3pts
 
 9-3
 LinkedList implementation -2pts
+cs106l intro -1pt
 
-
+9-4
+stream hello world print table -2pts
 
 
 
