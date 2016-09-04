@@ -1386,6 +1386,7 @@ LinkedList implementation -2pts
 cs106l intro -1pt
 
 9-4
+stanford library -1pt
 stream hello world print table -2pts
 
 
@@ -1405,7 +1406,7 @@ Stupid topics:
 
 
 
-+20pts
++22pts
 
 
 
