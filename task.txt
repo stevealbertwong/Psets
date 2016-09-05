@@ -1391,6 +1391,21 @@ stream hello world print table -2pts
 106l stream-manupulator 1pt
 
 
+C++ is an abstraction of C, C is an abstraction of assembly and registers
+stream is saving data in buffer/cache
+stringstream vs fstream vs cin vs iostream -> differs in the memory space they allocate to store
+database has schema and null -> since it is implemented in C++ using stream to read/write data
+
+
+Abstraction is simplication of complex idea, both in software and real life. Allows you to use it without understanding its underlying mechanism. 
+
+ch3 + 4 cs106l -2pts
+
+9-5 
+snake implementation 
+milestone 1 reading in the map -2pts
+milestone 2 calculate snake movement 
+
 
 Paper topics:
 1. reduce system crashes due to drivers + standardize interfaces to these devices
