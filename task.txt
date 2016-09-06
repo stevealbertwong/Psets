@@ -1422,9 +1422,14 @@ done snake most primative implementation 8pts
 reading interview questions 
 
 selection sort code implementation -2pts
+select the smallest
+
 stuck at trying to implement selection sort but implemented bubble sort 
 int i = j ****************** (i spent 2 hours debugging) 
 
+insertion sort -1pt
+insert into sorted array
+hardest part is implementation of sorted array -> add to the last -> keep swap if bigger previous term
 
 
 Paper topics:
