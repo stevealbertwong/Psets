@@ -303,6 +303,10 @@ bool MoveSnake(gameT& game) {
   return true;
 }
 
+
+
+
+
 /* Pauses for a few milliseconds so we can see what's happening.  This is
  * implemented using a busy loop, which is less-than-optimal but doesn't
  * require platform-specific features.
@@ -318,17 +322,18 @@ void InitializeGame(gameT& game) {
   /* Seed the randomizer. */
   srand(static_cast<int>(time(NULL)));
   
+  // break only if file -> ifstream, otherwise clear stream + wait for new file
   ifstream input;
   while(true) {
     cout << "Enter level file: ";
-    input.open(GetLine().c_str());
-    
-    if(!input.fail()) break;
-    
+    input.open(GetLine().c_str());    
+    if(!input.fail()) break;     
     cout << "Sorry, I can't open that file." << endl;
     input.clear();
   }
   
+
+
   LoadWorld(game, input);
 }
 

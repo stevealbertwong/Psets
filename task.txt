@@ -1399,12 +1399,20 @@ database has schema and null -> since it is implemented in C++ using stream to r
 
 Abstraction is simplication of complex idea, both in software and real life. Allows you to use it without understanding its underlying mechanism. 
 
-ch3 + 4 cs106l -2pts
+ch3 + 4 cs106l course reader, C++ library method and memory and hardware -2pts
+
 
 9-5 
 snake implementation 
 milestone 1 reading in the map -2pts
 milestone 2 calculate snake movement 
+
+
+9-6 
+done snake most primative implementation 4pts
+reading interview questions 
+
+
 
 
 Paper topics:
@@ -1421,7 +1429,7 @@ Stupid topics:
 
 
 
-+22pts
++28pts
 
 
 
