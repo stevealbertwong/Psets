@@ -1404,12 +1404,21 @@ ch3 + 4 cs106l course reader, C++ library method and memory and hardware -2pts
 
 9-5 
 snake implementation 
-milestone 1 reading in the map -2pts
-milestone 2 calculate snake movement 
+milestone 1 set up struct + reading map from level.txt to vector<string> board 
+
+milestone 2 calculate snake nextNode using rand() + check if nextNode == kEmptyTile in Board[nextNode.row][col]
+snake.push_front()
+snake.pop_back()
+snake.front()
+snake.back()
+
+milestone 3 update board + print board 
+board[snake.row][snake.col] = kSnakeTile
+for i<board.size() cout<<board[i]<<endl
 
 
 9-6 
-done snake most primative implementation 5pts
+done snake most primative implementation 8pts
 reading interview questions 
 
 
