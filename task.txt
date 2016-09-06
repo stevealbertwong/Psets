@@ -1421,6 +1421,9 @@ for i<board.size() cout<<board[i]<<endl
 done snake most primative implementation 8pts
 reading interview questions 
 
+selection sort code implementation -2pts
+stuck at trying to implement selection sort but implemented bubble sort 
+int i = j ****************** (i spent 2 hours debugging) 
 
 
 
