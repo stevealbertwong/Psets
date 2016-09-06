@@ -1409,7 +1409,7 @@ milestone 2 calculate snake movement
 
 
 9-6 
-done snake most primative implementation 4pts
+done snake most primative implementation 5pts
 reading interview questions 
 
 
