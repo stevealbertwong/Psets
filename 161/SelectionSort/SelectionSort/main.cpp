@@ -4,7 +4,7 @@
 //
 //  Created by Steven Wong on 9/6/16.
 //  Copyright © 2016 Steven Andrew Wong. All rights reserved.
-//  
+//
 
 #include <iostream>
 #include <vector>
@@ -66,9 +66,5 @@ int main(int argc, const char * argv[]) {
     }
     
     //selectionSortFailed(value);
-    selectionSort(value);
-    
-    
-    
-    
+    selectionSort(value);        
 }
