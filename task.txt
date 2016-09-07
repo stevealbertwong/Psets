@@ -1434,6 +1434,9 @@ hardest part is implementation of sorted array -> add to the last -> keep swap i
 9-7
 mergeSort code intuition -1pt
 mergeSort milestone 1 recursively divide up array + stack sequence of recursion 1pt
+mergeSort code implementation 2pts
+hardest part is the merge when i found out there could be a out of bound situation + worrying about stack sequence of running function and appending ->figure out the stack sequence by cout ->  figuring out how to compare them when there could be an out of bounds situation -> the more straightforward way is to say there are 2 situations: 1. both stay in bounds then normal compare lefthead/righthead +1   2. anyone goes out of bounds then just append the rest  
+
 
 
 
