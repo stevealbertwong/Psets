@@ -1433,7 +1433,7 @@ hardest part is implementation of sorted array -> add to the last -> keep swap i
 
 9-7
 mergeSort code intuition -1pt
-
+mergeSort milestone 1 recursively divide up array + stack sequence of recursion 1pt
 
 
 
