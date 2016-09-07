@@ -1431,6 +1431,11 @@ insertion sort -1pt
 insert into sorted array
 hardest part is implementation of sorted array -> add to the last -> keep swap if bigger previous term
 
+9-7
+mergeSort code intuition -1pt
+
+
+
 
 Paper topics:
 1. reduce system crashes due to drivers + standardize interfaces to these devices
