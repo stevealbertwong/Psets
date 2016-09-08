@@ -1437,7 +1437,6 @@ mergeSort milestone 1 recursively divide up array + stack sequence of recursion 
 mergeSort code implementation 2pts
 hardest part is the merge when i found out there could be a out of bound situation + worrying about stack sequence of running function and appending ->figure out the stack sequence by cout ->  figuring out how to compare them when there could be an out of bounds situation -> the more straightforward way is to say there are 2 situations: 1. both stay in bounds then normal compare lefthead/righthead +1   2. anyone goes out of bounds then just append the rest  
 
-
 linear algebra review -1pt
 1. linear algebra/matrix is structured in this way -> because matrix is used for huge data sets 
 Two huge data sets there are some relationship between them
@@ -1453,6 +1452,9 @@ vector -> n x 1 matrix
 
 linear regression + gradient descent review 
 
+
+9-8 
+logistic regression - decision boundary -1pt
 
 
 
