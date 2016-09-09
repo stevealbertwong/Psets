@@ -1457,8 +1457,21 @@ linear regression + gradient descent review
 logistic regression - decision boundary -1pt
 logistic regression -> find decision boundary so to classify data sets into positive and negative -> as long as we could tell one set of data is positive and one set of data is negative then just symbolicly apply sigmoid to convert them into 0.5-1.0 and give intensity/value to probability
 Sigmoid function itself is just for scaling -> BUT DECISION BOUNDARY IS EVERY THING as they directly tell whether a dataset is positive
+neural network + logistic regression intuition -4pts
 
 9-9
+neural network intuition -2pts
+backward propagation intuition
+
+
+
+
+
+
+
+
+
++32pts
 
 
 
@@ -1477,7 +1490,7 @@ Stupid topics:
 
 
 
-+28pts
+
 
 
 
