@@ -16,10 +16,6 @@ void mergeSort(int* arr, int leftHead, int length){
 		mergeSort(arr, lh, len)
 		mergeSort(arr, rh, len)
 	}
-
-
-
-
 }
 
 int main(int argc, char const *argv[])
