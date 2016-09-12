@@ -23,8 +23,8 @@ clear ; close all; clc
 %  The first two columns contains the exam scores and the third column
 %  contains the label.
 
-data = load('ex2data1.txt');
-X = data(:, [1, 2]); y = data(:, 3);
+data = load('ex2data1.txt'); % load data into a matrix
+X = data(:, [1, 2]); y = data(:, 3); % : refers it is vector
 
 %% ==================== Part 1: Plotting ====================
 %  We start the exercise by first plotting the data to understand the 
@@ -55,13 +55,16 @@ pause;
 %  costFunction.m
 
 %  Setup the data matrix appropriately, and add ones for the intercept term
-[m, n] = size(X);
+[m, n] = size(X); % m number of rows, n number of cols
+fprintf('number of rows: %f\n', m); % 100 sets of data
+fprintf('number of cols %f\n',n); % 2 cols per dataset
 
 % Add intercept term to x and X_test
 X = [ones(m, 1) X];
+fprintf('after added intercept term, number of cols %f\n',n); 
 
 % Initialize fitting parameters
-initial_theta = zeros(n + 1, 1);
+initial_theta = zeros(n + 1, 1); % 3 by 1 array of 0
 
 % Compute and display initial cost and gradient
 [cost, grad] = costFunction(initial_theta, X, y);
@@ -78,8 +81,13 @@ pause;
 %  In this exercise, you will use a built-in function (fminunc) to find the
 %  optimal parameters theta.
 
+% you can run gradient descent -> theta = theta - derivative of cost
+% function as theta increses 
+
 %  Set options for fminunc
-options = optimset('GradObj', 'on', 'MaxIter', 400);
+% set GradObj to be on -> return both the cost and gradient
+options = optimset('GradObj', 'on', 'MaxIter', 400);  
+
 
 %  Run fminunc to obtain the optimal theta
 %  This function will return theta and the cost 

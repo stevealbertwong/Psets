@@ -15,9 +15,12 @@ figure; hold on;
 
 
 
+% for y = 1, plot(x, 'rx'), for y = 0, plot(y, 'co')
+positiveExample = find(y==1); % this return all the rows in matrix that equals 1
+plot(X(positiveExample, 1), X(positiveExample, 2),'k+', 'LineWidth',2, 'MarkerSize', 10);
 
-
-
+negativeExample = find(y==0);
+plot(X(negativeExample, 1), X(negativeExample, 2), 'ko','MarkerFaceColor', 'y', 'MarkerSize', 10);
 
 
 % =========================================================================

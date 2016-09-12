@@ -1463,9 +1463,15 @@ neural network + logistic regression intuition -4pts
 neural network intuition -2pts
 backward propagation intuition
 
+9-10
+in logistic regression, gradient descent is decreasing partial derivative of cost BUT NOT the cost itself. for a linear classifier, the fact that it is in +ve or -ve area affects gradient decsnet despite the absolute value of cost being the same. i.e. if in the +ve area, as theta increase the cost increase exponestially so cost is +ve while if in -ve area, as theta increase cost decrease so cost is negative -> -ve add theta, +ve minus theta
 
+9-11
+WASTED AN ENTIRE DAY with a white girl that is not American.
 
-
+9-12
+predict.m 1pt
+ex3 multiclass logistic regression number recognition -2pts
 
 
 
