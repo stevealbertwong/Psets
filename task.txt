@@ -1477,6 +1477,10 @@ ex3 neural net forward algorithm 1pt
 
 9-13
 kernel svm intuition 2pts
+SVM with gaussian kernel vs logstic regression -1pt
+clustering algorithm -1pt
+1. closest trainging example assignment - after random initializing k number of clusters, for each training example, assign the closest cluster -> if a cluster ended up not having any closest point assigned, delete the cluster
+2. move cluster to the mean of training examples - for all the assigned training example, calculate the mean and then move cluster to the mean, repeat 1 
 
 
 
