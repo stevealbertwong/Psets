@@ -1530,6 +1530,45 @@ heroku platform as a service: environment where you could just push code and do 
 
 see: http://stackoverflow.com/questions/9802259/why-do-people-use-heroku-when-aws-is-present-whats-distinguishing-about-heroku
 
+milestone 1: mongodb, http server, connecting backend to frontend
+since i have installed mongodb through homebrew instead of tar the zip
+now i have to call mongod --dbpath /usr/local/var/mongodb/ to start mongodb with db path /usr/loca/var/mongodb
+also you need to start mongod before calling mongo shell 
+see: http://stackoverflow.com/questions/28771558/set-dbpath-in-mongodb-homebrew-installed-mac-os
+see: https://courses.edx.org/courses/course-v1:MongoDBx+M101x+2T2016/courseware/4cf555e7a26d4fbb87503adf07ef03ce/4f0c609a29a842029b0ac2ffee7d8f5b/
+
+db.test.insert({key:"value"}; // insert into collection test
+db.test.findOne{key:"value"}); // return objectID 12 bytes hash code
+db // return test the default collection
+
+package.json decribes your app's meta data e.g. name, version, dependencies
+Underscore: functional programming inspired utility function for javascript
+
+npm install
+
+mongodb nodejs driver
+
+mongodb insert
+1. mongodb = require('mongodb');
+2. uri = 'mongodb://localhost:27010/example';
+3. mongodb.MongoClient.connect(uri, function(error, db){db.collection('sample').insert({key:"value"}, function(error, result){db.collection('sample'.find().toArray(function(error, docs){docs.forEach(function(doc){console.log()JSON.stringify(doc)}}}; process.exit(0);
+
+mongoose to interface with mongodb
+mongoose -> object document mapper ODM that provides functionality like schema validation
+
+query
+
+callback = asychronous 
+asych and promises libraries 
+javascript is running a loop of event handler that could register event handling
+single threaded + loop to handle waiting time of network io, once network io is finished, gets added to the queue of event being executed
+e.g. mongoclient.connect does not block the event loop while it connects -> but it registers an event handler that tells nodejs to execute callback function once network io connecting to mongod server is done
+
+java, c++ -> code executes in the current iteration and thus block the event loop, only 1 loop -> sychronous 
+js -> code that registers event handler and thus not blocking the event loop, e.g. file io, network io is js are typically asychronous, callback means asychronous as it is registering event handler -> this enables nodejs to be highly concurrent by default as no need to worry about multiple thread 
+callback is handy to determine your code doing too much io
+
+
 
 
 console
@@ -1541,7 +1580,7 @@ $('button[id=btn1]') //id is an attribute -> return <button id="btn1" data="data
 
 
 
-+32pts
++34pts
 
 
 
