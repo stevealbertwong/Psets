@@ -1692,5 +1692,3 @@ int putchar(int c) // putc(c, stdout)
 int fputc(int c, FILE* stream); // writes the character, cast unsigned char to stream
 int putc(intc, FILE* stream);
 
-
-
