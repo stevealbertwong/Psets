@@ -1483,6 +1483,62 @@ clustering algorithm -1pt
 2. move cluster to the mean of training examples - for all the assigned training example, calculate the mean and then move cluster to the mean, repeat 1 
 
 
+106a 
+What is inheritance? 
+subclass extends superclass or children inherits all functions and fields of parent
+copying existing class taking its core attributes and behaviors + add own behavior
+e.g. GObject is parent of all children GRect, GLabel, GPolygon
+
+Class Object forms the root of overall inheritance tree of all Java classes 
+GObject implicitly extends Object without saying extends
+
+return super.getsalary() -> refers to superclass's method getsalary() when replacing it in inheritance
+
+
+9-14
+
+sudden sensetime web development job interview 3pts
+
+jquery
+change tag action
+$('div id').toggle()
+change html
+$('#button id').html('I am changing the html from using javascript library jquery')
+
+event binding
+javascript event name -> 'click', 'mouseover'
+$('#button id').on('click', function(){
+	$('#dividorbuttonid').find('div class').html // same as $('#divid .divclass').html('mynewcontent')
+})
+
+smarter better event binding listening to all button at once
+
+
+
+
+
+ajax
+
+php mysql
+phpmyadmin or mysqlworkbench is gui for mysql
+milestone 1: use your own computer as server to set up php mysql
+
+
+Nodejs
+why heroku when ams present:
+heroku platform as a service: environment where you could just push code and do minimal configuration, less to build or maintain e.g. load balancer/caching layer Varnish, server like apache, passenger, nginx to serve your code, deploy configure clustered database instance like PostgreSQL, deployment system like Capistrano, also log aggregation  
+
+see: http://stackoverflow.com/questions/9802259/why-do-people-use-heroku-when-aws-is-present-whats-distinguishing-about-heroku
+
+
+
+console
+$('button[data-panel=panel1]') // looking for button with attribute  
+$('button[id=btn1]') //id is an attribute -> return <button id="btn1" data="data1">button1</button> 
+
+
+3 days plan: tech blog
+
 
 
 +32pts
