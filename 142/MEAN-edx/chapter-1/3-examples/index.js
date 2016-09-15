@@ -7,8 +7,9 @@ var uri = 'mongodb://localhost:27017/example';
 /*
 Art of callback:
 1. wait MongoClient to connect to uri -> return db handle
-2. db.collection.insert -> return result
-3. wait til insert succeed, db.collection.find() -> return doc
+2. creates doc to insert
+3. db.collection.insert -> return result
+4. wait til insert succeed, db.collection.find() -> return doc
 */
 
 
@@ -30,12 +31,15 @@ mongodb.MongoClient.connect(uri, function(error, db) {
 
     }
   
+  
 
   db.collection('sample').insert(doc, function(error, result) {
     if (error) {
       console.log(error);
       process.exit(1);
     }
+
+    // db.collection('sample').createIndex('title':1); // unexpected token : error
 
     var query = {year:1975};
     var query2 = {'ratings.audience' : {'$gte':90}}; // 90 or greater

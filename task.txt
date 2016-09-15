@@ -1495,11 +1495,11 @@ GObject implicitly extends Object without saying extends
 return super.getsalary() -> refers to superclass's method getsalary() when replacing it in inheritance
 
 
-9-14
+9-14,15
 
-sudden sensetime web development job interview 3pts
+sudden sensetime web development job interview 11pts
 
-jquery
+jquery - manipulate html
 change tag action
 $('div id').toggle()
 change html
@@ -1522,6 +1522,11 @@ ajax
 php mysql
 phpmyadmin or mysqlworkbench is gui for mysql
 milestone 1: use your own computer as server to set up php mysql
+
+
+
+
+
 
 
 Nodejs
@@ -1569,6 +1574,70 @@ js -> code that registers event handler and thus not blocking the event loop, e.
 callback is handy to determine your code doing too much io
 
 
+5 hours punishment
+
+require() -> nodejs way to break large code into small manageable files, preferred way to share code with other file
+module.exports -> the return value when require() is called 
+
+// -g -> --grep globally search for regular expression and print
+// only run fails test but not the others.
+./node_modules/.bin/mocha -g "fail" test.js
+
+npm shortcut helper
+package.json -> "scripts": {"test": "mocha test.js", "test-kitten" : "mocha -R nyan test.js"}
+npm test // runs the test script defined in package.json
+npm run test-kitten
+
+// install mocha globally <- not preferred as breaks all node projects on the machien, prefer to install local dependencies
+npm install mocha -g 
+
+./node_modules/.bin/gulp test
+npm run watch
+
+nodejs: validating client's data, authentication, routing, receiving http from angularjs for JSON
+
+
+
+
+
+MONGODB
+
+schema: set of rules of what fields + fields properties to consider valid input
+
+reading a single MongoDB document requires fewer different non-sequential hard drive read
+
+indexing
+db.users.createIndex({name:1}); // create a linked list using value of name, same for multi-key index
+
+
+
+
+
+NodeJS - building the RESTful api
+connecting routing with database -> listening for request from routing + send out response with data from Mongo
+
+translate get post put delete http request to create read update delete database command
+
+app.set vs app.get vs app.use vs app.post
+
+controller: connect app.get or app.post to mongoose
+
+
+
+AngularJS
+sending http to nodejs api
+manipulate html 
+add javscript variable to html
+
+2 way data binding: bind the state of a javascript variable to the state of html
+
+
+<span> provides a way to add a hook to a part of a text or a part of a document and grouping inline documents together
+<div> and <p> starts a new line
+<hr> stupid line
+<h1> bigger header style + seperate line
+<h2> smaller than h1 header style + separate line
+global attribute class is for css
 
 
 console
@@ -1576,11 +1645,22 @@ $('button[data-panel=panel1]') // looking for button with attribute
 $('button[id=btn1]') //id is an attribute -> return <button id="btn1" data="data1">button1</button> 
 
 
+
+
+
+
+
+
+
+
+
+
+
 3 days plan: tech blog
 
 
 
-+34pts
++41pts
 
 
 

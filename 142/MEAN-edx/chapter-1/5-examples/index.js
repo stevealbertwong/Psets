@@ -1,5 +1,6 @@
-var fn = require('./myfile.js');
+var fn = require('./myfile.js'); // file level scoping
 fn();
 
-var otherFn = require('./test').other;
+// when call on directory nodejs look for index.js in that directory by default
+var otherFn = require('./test').other; 
 otherFn();
