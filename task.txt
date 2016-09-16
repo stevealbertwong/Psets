@@ -1495,7 +1495,8 @@ GObject implicitly extends Object without saying extends
 return super.getsalary() -> refers to superclass's method getsalary() when replacing it in inheritance
 
 
-9-14,15
+9-14,15, 16
+3 + 7 + 5pts
 
 sudden sensetime web development job interview 11pts
 
@@ -1625,7 +1626,8 @@ controller: connect app.get or app.post to mongoose
 
 
 AngularJS
-sending http to nodejs api
+$scope variable + method
+sending http post/get to nodejs api
 manipulate html 
 add javscript variable to html
 
@@ -1645,6 +1647,85 @@ $('button[data-panel=panel1]') // looking for button with attribute
 $('button[id=btn1]') //id is an attribute -> return <button id="btn1" data="data1">button1</button> 
 
 
+# 1) Install heroku and git
+$ sudo apt-get install -y git-core
+$ wget -qO- https://toolbelt.heroku.com/install-ubuntu.sh | sh
+$ which git
+$ which heroku
+sudo apt-get remove git-core // when you want to remove
+
+# 2) Login and set up your SSH keys
+$ heroku login
+$ ssh-keygen -t rsa
+$ heroku keys:add
+
+3) Clone a sample repo and push to heroku
+$ git clone https://github.com/heroku/node-js-sample.git
+$ cd node-js-sample
+$ heroku create
+$ git push heroku master
+
+// looking for pdf preview -> then kill it
+ps xw | grep Preview
+
+ls -alrth myfile # list metadata on myfile
+source ~/.bash_profile // refresh changes made to alias
+echo "line1" >> myfile # append via ’>>’ to a file
+rm -i myfile2
+cp -av /home/ubuntu/techblog /home/ubuntu/techblog2
+rmdir mydir # won’t work because there’s a file in there
+rm -rf mydir # VERY dangerous command, use with caution
+rm myfile*
+mv git bin // move git into bin directory
+mv git git.txt // change name
+wget https://spark-public.s3.amazonaws.com/startup/code/git
+export PATH=$HOME/bin:$PATH // append git in $HOME/bin to exisitng $PATH 
+which -a git // show use all the git binary
+
+// copy hello.txt into ubuntu server
+scp -i skey.pem hello.txt ubuntu@ec2-54-218-73-84.us-west-2.compute.amazonaws.com:~/
+
+scp -i stevealbertwong.pem helloworld.c ubuntu@ec2-54-191-202-37.us-west-2.compute.amazonaws.com:~/
+
+wget https://spark-public.s3.amazonaws.com/startup/code/simple.sh
+chmod u+x simple.sh // set to executable
+chmod 777 simple.sh // set to executable same
+./simple.sh
+
+
+sudo apt-get install -y make gcc // install gcc and make
+
+// move from your computer to remote aws
+1 # -- Execute on local computer
+2 # Copy hello.txt from local computer to remote home directory
+3 $ scp -i skey.pem hello.txt ubuntu@ec2-54-218-73-84.us-west-2.compute.amazonaws.com:~/
+4
+5 # Copy h.txt from local to remote home directory, renaming it foo.txt
+6 $ scp -i skey.pem h.txt ubuntu@ec2-54-218-73-84.us-west-2.compute.amazonaws.com:~/foo.txt
+7
+8 # Copying ~/foo.txt from remote to current local directory
+9 $ scp -i skey.pem ubuntu@ec2-54-218-73-84.us-west-2.compute.amazonaws.com:~/foo.txt .
+10
+11 # Copying ~/foo.txt from remote to local directory cc, renaming it a.b
+12 $ scp -i skey.pem ubuntu@ec2-54-218-73-84.us-west-2.compute.amazonaws.com:~/foo.txt cc/a.b
+
+
+// setup nodejs npm 
+1 $ sudo apt-get update
+2 # Install a special package
+3 $ sudo apt-get install -y python-software-properties python g++ make
+4 # Add a new repository for apt-get to search
+5 $ sudo add-apt-repository ppa:chris-lea/node.js
+6 # Update apt-get’s knowledge of which packages are where
+7 $ sudo apt-get update
+8 # Now install nodejs and npm
+9 $ sudo apt-get install -y nodejs
+
+
+
+"Emacs is an excellent operating system. All it's missing is a decent text editor."
+
+server configuration(Paas) computer configuration(Iaas) + code = Google api (Saas)
 
 
 
@@ -1656,7 +1737,7 @@ $('button[id=btn1]') //id is an attribute -> return <button id="btn1" data="data
 
 
 
-3 days plan: tech blog
+4 days hackathon: tech blog
 
 
 
