@@ -1495,8 +1495,8 @@ GObject implicitly extends Object without saying extends
 return super.getsalary() -> refers to superclass's method getsalary() when replacing it in inheritance
 
 
-9-14,15,16,17
-3 + 7 + 5 + 5pts
+9-14,15,16,17,18
+3 + 7 + 5 + 5 + 5 pts
 
 sudden sensetime web development job interview 11pts
 

@@ -15,7 +15,7 @@ var mongoose = require('mongoose');
 var schema = require('./schema'); 
 
 
-// connection: object representing sockets connected to Mongodb server
+// connection: object represesmnnting sockets connected to Mongodb server
 mongoose.connect('mongodb://localhost:27017/test');
 
 // Parameters are: model name, schema, collection name
@@ -30,7 +30,7 @@ var user = new User({ // user: document
 
 // save() persist user document to mongodb
 user.save(function(error) {
-  if (error) {
+  if (error) {ip
     console.log(error);
     process.exit(1);
   }
