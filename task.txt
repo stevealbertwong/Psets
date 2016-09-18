@@ -1495,8 +1495,8 @@ GObject implicitly extends Object without saying extends
 return super.getsalary() -> refers to superclass's method getsalary() when replacing it in inheritance
 
 
-9-14,15, 16
-3 + 7 + 5pts
+9-14,15,16,17
+3 + 7 + 5 + 5pts
 
 sudden sensetime web development job interview 11pts
 
@@ -1721,23 +1721,32 @@ sudo apt-get install -y make gcc // install gcc and make
 8 # Now install nodejs and npm
 9 $ sudo apt-get install -y nodejs
 
-
-
 "Emacs is an excellent operating system. All it's missing is a decent text editor."
 
 server configuration(Paas) computer configuration(Iaas) + code = Google api (Saas)
 
 
+MEAN chapter 20 AngularJS
+
+// html rootelement is angularjs code's name + angularJS knows where to compile the code
+<html ng-app="AngularModulenName">
+var app = angular.module("AngularModuleName", [])
 
 
 
 
 
+// http.createServer(app).listen(process.env.PORT);
+// mongoose.connect(process.env.MONGOLAB_URI || "mongo://localhost:27017/test")
 
 
+// godaddy destinated forwarding ip
+50.63.202.1
 
+npm install nodemon
+nodemon node_server.js
 
-4 days hackathon: tech blog
+4 days hackathon failed miserably: tech blog. I got a F
 
 
 
