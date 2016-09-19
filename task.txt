@@ -1495,8 +1495,8 @@ GObject implicitly extends Object without saying extends
 return super.getsalary() -> refers to superclass's method getsalary() when replacing it in inheritance
 
 
-9-14,15,16,17,18
-3 + 7 + 5 + 5 + 5 pts
+9-14,15,16,17,18,19
+3 + 7 + 5 + 5 + 5 + 5 pts
 
 sudden sensetime web development job interview 11pts
 
@@ -1745,6 +1745,10 @@ var app = angular.module("AngularModuleName", [])
 
 npm install nodemon
 nodemon node_server.js
+
+token is just a hashed username on the client/broswer so hacker could not just easily use username for header authentication to get/post to database
+finished all basic authentication + switch pages + login logout + token cookie save token into database + db.remove(_id, userid)
+
 
 4 days hackathon failed miserably: tech blog. I got a F
 
