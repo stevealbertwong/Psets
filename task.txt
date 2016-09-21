@@ -1753,6 +1753,125 @@ finished all basic authentication + switch pages + login logout + token cookie s
 4 days hackathon failed miserably: tech blog. I got a F
 
 
+9-20 -3pts
+React js - instagram
+ember.js -Yahoo, groupon
+Jquery + Ajax
+ink
+D3
+Modernizr
+CloudFlare cdn
+Semantic-ui
+Raphael-js graphics -linkedin
+Hogan.js -twitter
+YUI.js -linkedin
+Varnish-cache tool
+Twitter emoji
+backbone.js - Airbnb, Pinterest
+meteor.js
+moment.js
+Mustache.js
+Spin.js
+underscore.js
+video.js
+reCaptcha
+MathJax.js
+Mediaelement.js
+XRegExp.js
+head.js
+Prototype.js
+swfobject
+require.js
+JqueryUI
+fontawesome
+Sweetalert
+handlebars.js-amazon
+
+less interesting
+Vue.js
+Mercury.js
+Ploymer.js
+Aurelia.js
+
+
+Advertisement network
+adroll
+google ad sense 
+doubleclick ad exchange
+adzerk
+Appnexus
+buysellad
+carbonad
+
+
+Analytics
+new relic
+
+disqus comment system
+
+
+
+
+AngularJS directives
+the idea of js is programming html tag 
+the idea of angular js is programming html tag by turning html tag in object -> directives
+
+https://docs.angularjs.org/api/ng/directive/ngPluralize
+ngPluralize - steven and cara and 10 other people have liked -> like if $scope.count = 1, display certain statement
+
+https://docs.angularjs.org/api/ng/input/input%5Bemail%5D
+form validation -email
+
+https://docs.angularjs.org/api/ng/directive/ngInit
+ngInit + ngRepeat - ngInit could store $index of for-loop
+
+https://docs.angularjs.org/api/ng/service/$cacheFactory
+for loop to get both key and value 
+  <div ng-repeat="(key, value) in cache.info()">
+    <span ng-bind="key"></span>
+    <span>: </span>
+    <b ng-bind="value"></b>
+
+https://docs.angularjs.org/api/ng/service/$filter
+$filter
+$scope.filteredText = $filter('uppercase')($scope.originalText);
+
+<span ngBind="name"> </span> -> {{name}}
+
+
+Browsify
+Node.js JavaScript, also known as CommonJS,
+with its synchronous require calls and module
+to exports/require("express") property, won't work in the browser as is.
+
+
+Best quote of today:
+if you dont know how to parse a website then you should probably not use beautiful soup
+
+pythonanywhere
+linode
+digital ocean
+
+
+9-21 6pts
+flask
+apache + nginx
+mysqladmin
+
+200
+301 - move permanetly, redirect
+400 - bad request, bad login credential, not found in database
+404 - not found, no such route
+500 - infamous internal server error
+
+flask is like combining nodejs and angularjs 
+MEAN stack could call different servers using the same code
+
+wsgi is between flask(gateway) and nginx(server)
+virtualenv is to create python environment sandbox -> multiple version of python with multiple modules where each environment isolated from each other 
+
+
+
 
 +41pts
 
