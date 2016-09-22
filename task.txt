@@ -1786,6 +1786,8 @@ JqueryUI
 fontawesome
 Sweetalert
 handlebars.js-amazon
+sumome
+highchart js plugin 
 
 less interesting
 Vue.js
@@ -1854,15 +1856,17 @@ digital ocean
 
 
 9-21 6pts
-flask
+flask - html logic, same template to show highchartjs through manipulating varables
 apache + nginx
 mysqladmin
 
 200
 301 - move permanetly, redirect
 400 - bad request, bad login credential, not found in database
-404 - not found, no such route
+404 - page not found, no such route
+405 - method not allowed/found, <form action="/template" method="post"> but in flask.py there is no @app.route("/template", methods=['GET', 'POST']) def template(): if request.method="POST": return render_template("login.html") 
 500 - infamous internal server error
+
 
 flask is like combining nodejs and angularjs 
 MEAN stack could call different servers using the same code
@@ -1870,8 +1874,17 @@ MEAN stack could call different servers using the same code
 wsgi is between flask(gateway) and nginx(server)
 virtualenv is to create python environment sandbox -> multiple version of python with multiple modules where each environment isolated from each other 
 
+python-> static typing : indent without {} to indicate scope
+flask jinja template: {% for p in paragraph%} {{p}} {% endfor %}
 
+template engine is literally a compiler that replace {% if pageType == 'about '%} {%  endif %} with right tag and just send those tags out 
 
+contentmanagement.py -> initiates a dictionary of road map of pages  -> then import into home page 
+for dynamic linking for a series of website -> for loop
+
+flask-> the only way to do data binding is render_template("login.html", error=error)
+
+python as scripting language -> stop running the remaining script when it hits return
 
 +41pts
 
