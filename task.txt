@@ -1788,6 +1788,9 @@ Sweetalert
 handlebars.js-amazon
 sumome
 highchart js plugin 
+draft.js - facebook code editor, https://github.com/facebook/draft-js
+immutable.js
+https://www.npmjs.com/package/rainbow-code
 
 less interesting
 Vue.js
@@ -1885,6 +1888,63 @@ for dynamic linking for a series of website -> for loop
 flask-> the only way to do data binding is render_template("login.html", error=error)
 
 python as scripting language -> stop running the remaining script when it hits return
+
+p means password
+run ./mysql -u root -p
+mysql --user=root -p 
+
+for mysql basic command walkthrough
+see: http://www.newthinktank.com/2014/08/mysql-video-tutorial/
+
+see: sentdex flask web
+https://www.youtube.com/watch?v=T5eJeCoprCA&index=13&list=PLQVvvaa0QuDc_owjTbIY4rbgXOFkUYOUB
+SHOW DATABASES;
+CREATE DATABASE pythonprogramming;
+CREATE TABLE users;
+show databases;
+select database; //show the current database
+drop database if exists test3; // delete database
+use test2; // select database test2
+show tables; // different student and table
+describe student;
+
+CREATE TABLE student(first_name VARCHAR(30) NOT NULL, last_name VARCHAR(30) NOT NULL, email VARCHAR(60) NULL, street VARCHAR(50) NOT NULL, city VARCHAR(40) NOT NULL, state CHAR(2) NOT NULL DEFAULT "PA", zip MEDIUMINT UNSIGNED NOT NULL, phone VARCHAR(20) NOT NULL, birth_date DATE NOT NULL, sex ENUM('M', 'F') NOT NULL, date_entered TIMESTAMP, lunch_cost FLOAT NULL, student_id INT UNSIGNED NOT NULL AUTO_INCREMENT PRIMARY KEY);
+
+INSERT INTO student VALUES('Andy', 'Brennan', 'abrennan@aol.com', '281 4th St', 'Jacksonville', 'NC', 28540, '792-223-8902', "1960-12-27",'M', NOW(), 3.50, NULL);
+
+
+anaconda command
+http://conda.pydata.org/docs/using/pkgs.html
+conda list
+conda search beautiful-soup
+conda info --envs
+conda install flask-wtf
+
+
+ipython notebook --notebook-dir='~/Desktop/Stanford/CS145-Database/lecture-5-7' // or just cd to lecture-5-7 then ipython notebook 
+
+sql injection: 
+x = c.execute('SELECT * FROM users WHERE username = (%s)', username)
+
+' or '1'='1
+password:'or1=1--
+' or '1'='1 and firstname <> 'Mickey // and firstname is not equal to Mickey
+' or '1'='1 and firstname <> 'Mickey' and firstname <>'Donald
+
+# *arg:list of arguments **kwarg-> key value arguments both-> list of key value argument
+def function(*args, **kwargs):
+    for arg in 
+	for item in kwargs.items():
+	    print item
+
+funtion(x=10, v=1290, 12=sadasj, 9=sdjao) 
+
+
+
+
+CHROME CONSOLE HACKING TRAINING
+
+
 
 +41pts
 
