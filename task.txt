@@ -1,4 +1,4 @@
->70: Stanford, MIT, Cal
+70: Stanford, MIT, Cal
 63: Caltec, Carneige Mellon, Princeton, Harvard
 56: Columbia, Cornell, UPenn, Maryland, Michigan, Georgia Tech, Waterloo
 51: UChicago, UT, Washington, UIUC, UCLA, RIT, Harvey Mudd, Middlebury
@@ -1858,7 +1858,7 @@ linode
 digital ocean
 
 
-9-21 6pts
+9-21,22,23 6, 7, 4pts
 flask - html logic, same template to show highchartjs through manipulating varables
 apache + nginx
 mysqladmin
@@ -1940,9 +1940,24 @@ def function(*args, **kwargs):
 funtion(x=10, v=1290, 12=sadasj, 9=sdjao) 
 
 
+9-24 4pts
+MEAN stack full on coding
+finished login page
+
+mongod --dbpath /usr/local/var/mongodb/
+
+// cannot really 'delete' a cookie per se but you could set it expired 
+document.cookie = 'nameofthecookie' + '=;expires=Thu, 05 Oct 1990 00:00:01 GMT;';
+
+
+
+
+
 
 
 CHROME CONSOLE HACKING TRAINING
+
+
 
 
 
