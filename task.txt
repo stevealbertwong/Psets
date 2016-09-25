@@ -1865,6 +1865,7 @@ mysqladmin
 
 200
 301 - move permanetly, redirect
+304 - not moodified, cached
 400 - bad request, bad login credential, not found in database
 404 - page not found, no such route
 405 - method not allowed/found, <form action="/template" method="post"> but in flask.py there is no @app.route("/template", methods=['GET', 'POST']) def template(): if request.method="POST": return render_template("login.html") 
@@ -1949,16 +1950,37 @@ mongod --dbpath /usr/local/var/mongodb/
 // cannot really 'delete' a cookie per se but you could set it expired 
 document.cookie = 'nameofthecookie' + '=;expires=Thu, 05 Oct 1990 00:00:01 GMT;';
 
+session
+store a connection between server and client
+e.g. req.session.errors = errors // store errors of form validation from post
+e.g. req.session.success = true // store meta data of req, res fo a connection
 
+CSS
+element>element	div > p	Selects all <p> elements where the parent is a <div> element
 
+mongodb update
+SEE: https://docs.mongodb.com/manual/reference/method/db.collection.update/#db.collection.update
+db.users.update({username:'steven'}, {$set:{password:"steven"}})
 
 
 
 
 CHROME CONSOLE HACKING TRAINING
+command + option + c to bring up the console
 
 
-
+mongoose find query
+Person.
+  find({
+    occupation: /host/,
+    'name.last': 'Ghost',
+    age: { $gt: 17, $lt: 66 },
+    likes: { $in: ['vaporizing', 'talking'] }
+  }).
+  limit(10).
+  sort({ occupation: -1 }).
+  select({ name: 1, occupation: 1 }).
+  exec(callback);
 
 
 +41pts
