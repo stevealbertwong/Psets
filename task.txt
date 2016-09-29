@@ -1790,6 +1790,7 @@ sumome
 highchart js plugin 
 draft.js - facebook code editor, https://github.com/facebook/draft-js
 immutable.js
+TweenMax.js - Vote for america by dutch world map showing votes figure
 https://www.npmjs.com/package/rainbow-code
 
 less interesting
@@ -1941,7 +1942,7 @@ def function(*args, **kwargs):
 funtion(x=10, v=1290, 12=sadasj, 9=sdjao) 
 
 
-9-24 4pts
+9-24, 25 4 + 4pts
 MEAN stack full on coding
 finished login page
 
@@ -1981,6 +1982,109 @@ Person.
   sort({ occupation: -1 }).
   select({ name: 1, occupation: 1 }).
   exec(callback);
+
+
+TECHBLOG TODO
+1. email verification
+2. nav bar
+3. listing and linking of topics
+4. comment
+5. picture
+
+
+9-26 2pts
+smart search algorithm
+https://en.wikipedia.org/wiki/Rocchio_algorithm
+
+rugby + interview
+
+intuition of naive bayes 
+P(cs106 | java) = P(java | cs106) x P(cs106) / P(java) 
+i.e. frequency of cs106 in the world of java = frequency of java in cs106 / frequncy of java overall in cs106, 108, 109
+
+i.e. naive bayes is just explaining difference between p(java|cs106)p(cs106) and p(java)
+
+why naive bayes
+when search a word of all articles, instead of returning all articles that contain the word, we return the article with highest frequency of the word
+
+a contrast between neural net(most significant/distinguishing word that represents cs106) and naive bayes(frequency)
+but maybe they are actually calculating the same thing
+as neural net with a hidden layer, most distinguishing factors are unique word (i.e. most frequent highest probability word from that article as well) or most frequent words
+the difference is neural net is to distinguish the most distinguishing factor while naive bayes can only tell you how frequent it is so you could only hope for you stumble upon the most distinguished one
+
+
+
+9-27
+
+https://www.youtube.com/watch?v=iX5V1WpxxkY
+RNN intuition -3pts
+machine-learning paper reading
+
+linked list creates an object data structure
+the idea of object comes because you could store memory address
+
+The idea of SVM is to construct a hyperplane
+to seperate the two classes of data with the gap being as
+wide as possible.
+
+python connecting to mysql - google app engine
+
+db = MySQLdb.connect(unix_socket='/cloudsql/' + _INSTANCE_NAME, db='guestbook', user='myuser')
+
+cursor = db.cursor()
+cursor.execute('SELECT guestname, content, entryID FROM entries')
+guestlist = [];
+for row in cursor.fetchall()
+	guestlist.append(cgi.escape(row[0]), cgi.escape(row[1]), cgi.escape(row[2]))
+db.close()
+
+9-28 
+6 hours spent on job offer
+
+see: http://www.existor.com/en/ml-rnn.html
+see: http://karpathy.github.io/2015/05/21/rnn-effectiveness/
+see: http://cs.stanford.edu/people/karpathy/
+see: http://cs231n.github.io/neural-networks-case-study/
+see: http://cs231n.github.io/linear-classify/
+
+
+RNN intuition and code intuition -2pts -> from now you could manipulate neurons
+i disagree that feed forward network could never do recurrent neural network does
+i do agree that vanilla neural network is designed more to learn a relationship between the current input and output
+and the existence of RNN manipulates and designates a set of neurons to store the sequence of input -> therefore extra connections to teach it about sequences in the data
+
+
+9-29 -5pts
+softmax - force the output to represent a probability distribution across discrete alternative
+neural network matlab
+linear neuron
+public key vs private key
+
+http://cs231n.github.io/neural-networks-case-study/
+each image in CIFAR-10 is a point in 3072-dimensional space (32x32x3 pixels)
+i.e. 32*32*3= 3072 an equation with 3072 weights/parameters, and 1 point carries all 3072 values of paramters
+
+We are going to measure our unhappiness with outcomes such as this one with a loss function (or sometimes also referred to as the cost function or the objective)
+
+softmax function takes a vector of arbitrary real-valued scores (in zz) and squashes it to a vector of values between zero and one that sum to one.
+
+https://en.wikipedia.org/wiki/Kullback%E2%80%93Leibler_divergence
+KL-divergence from Q to P D(P||Q)
+measure of information gained between prior probability distribution Q and posterior/ true probability distribution P
+
+cross entropy = KL divergence
+
+1. matrix multiply 
+2. base number + normalize -> i.e. softmax squashes into 0-1 sums up to 1
+3. KL divergence from Q to P -> i.e. P/true number = -log(p) Q/raw vector = 1 (normalize always sum up to 1 -> 1
+ 
+cross-entropy objective wants the predicted distribution to have all of its mass on the correct answer.
+
+9-30
+
+
+
+
 
 
 +41pts
