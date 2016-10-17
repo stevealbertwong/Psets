@@ -2077,11 +2077,540 @@ cross entropy = KL divergence
 1. matrix multiply 
 2. base number + normalize -> i.e. softmax squashes into 0-1 sums up to 1
 3. KL divergence from Q to P -> i.e. P/true number = -log(p) Q/raw vector = 1 (normalize always sum up to 1 -> 1
- 
+
 cross-entropy objective wants the predicted distribution to have all of its mass on the correct answer.
 
-9-30
 
+softmax + cross entropy = loss function
+
+9-30 -4pts
+4-step approach
+1. algo intuition (hardest as refresh)
+2. algo write out
+3. code intuition
+4. code write out (hardest as debug + combining 2,3)
+
+
+cs229 lecture notes
+Overview of different learning models
+
+supervised learning = learning algorithms that model p(y|x; θ) probability of y given x, parameterized by θ
+
+logistic regression modeled p(y|x; θ) as hθ(x) = g(θT x) where g is the sigmoid function
+
+
+Twitter wiki words association
+Naive bayes
+http://machinelearningmastery.com/naive-bayes-classifier-scratch-python/
+
+python attack apple server to reserve iphone
+
+
+10-1 5pts
+word2vec is very complicated naive bayes calculating co-occurences of all words to each other
+
+one hot encoded vector -> unit basis vectors
+
+bags of words model + skip-gram model (softmax + cross entropy)
+CBOW = neural network, predict a word based on context (words in the window)
+you need to implement skip-gram
+
+only 1 column in matrix is relevant to 1 word
+more hidden nodes within the hidden layers means ???
+
+
+
+huffman tree to represent the frequency of word + represents in binary
+
+
+see: https://buss_jan.gitbooks.io/word2vec/content/chapter2.html
+
+A word is the basic unit of discrete data, defined to be an item from a vocabulary indexed by 1,...,V. We represent words using unit-basis vectors that have a single component equal to one and all other components equal to zero (one-hot encoding). Thus, using superscripts to denote components, the vth word in the vocabulary is represented by a V−vector w such that wv=1 and wu=0 for u≠v.
+
+A document is a sequence of N words denoted by w = (w1,w2,...,wN), where wn is the nth word in the sequence.
+
+A corpus is a collection of M documents denoted by D=w1,w2,...,wM.
+
+A word embedding W:words−>ℝn is a parameterized function mapping words in some language to high-dimensional vectors (perhaps 200 to 500 dimensions). For example, we might find:
+W("cat")=(0.2,−0.4,0.7,...)
+W("mat")=(0.0,0.6,−0.1,...)
+
+
+singular value decomposition
+
+virtualenv .env                  # Create a virtual environment
+source .env/bin/activate         # Activate the virtual environment
+pip install -r requirements.txt  # Install dependencies
+# Work on the assignment for a while ...
+deactivate                       # Exit the virtual environment
+
+
+10-2
+tree = recursion to do search, if elif elif manually to build tree
+parse tree - hierarchical structure of a simple sentence
+
+parse tree to represent mathematical representation
+
+euler's number is the base of natural logarithm-> sigmoid
+euler number is chosen for sigmoid since it is the definition of natural logarithm's base number, or logarithm to base e
+2.71828
+infinity of compound interest
+irrational -> not a ratio of integers
+transcendental -> not a root of non-zero polynomial with rational coefficients
+conclusion for non-math people -> it is chosen because it gives you 0-1
+
+
+encoding 
+https://en.wikipedia.org/wiki/Comparison_of_Unicode_encodings
+utf-8(chinese, japaness), latin1(english only), ISO-8859-1(czech)
+http://stackoverflow.com/questions/6539881/python-converting-from-iso-8859-1-latin1-to-utf-8
+http://balusc.omnifaces.org/2009/05/unicode-how-to-get-characters-right.html
+
+
+bag of word representation = 1 on vector
+
+
+
+10-3
+how to convert to low-dimentional representation ??????? using PCA ????????
+sliding window generating context vectors?????
+what to do after loss -> partial derviative of loss with respect to W with stockhastic gradient descent?????
+how to connect output layer nodes to hidden layer in a huffman tree way?????????
+negative sampling -> not updating all negative output nodes but just do a sample
+negative sampling and huffman tree is for efficiency of updating the output weight matrices
+
+
+skip-gram vs CBOW different ways of generating the contexts, inputs and expected outputs to neural network
+skip-gram -> negative sampling?????????
+it takes the predicted word as input layer and context as output
+
+
+word2vec is doing matrix factorization of co-occurence
+i.e. co-occurence matrix = input matrices * output matrices transpose
+skip-gram model with negative sampling -> basically doing matrix factorization where the matrix is pointwise mutual information (i.e. point wise co-occurence)
+i.e. a carefully constructed matrix factorization = word2vec or wordembedding in general
+word embeddings of equal quality to word2vec can be obtained by singular value decomposition
+
+each point in weight matrices -> excitement/inhibit level, thoery, template, frequncey/occurence
+
+
+evaluate results:
+wordsim353, classification, clustering
+
+hidden layer dimention is set to 500-1000 after a point, will not significantly affect result, unless significantly more data from 1gb to 1tb
+
+
+
+
+
+10-6
+end to end memory network
+memory module + controller module
+soft attention -> train a state vector that tells which sentence to pay more attention to when asnwering that particular question
+transform input(question asked) into weight * memory(relevant sentence with weight)
+this is actually exactly what i was planning to do
+when customer asked a question, i looked for the relevant answers/prepared relevant answers -> then use these relevant answers as inputs to get the label
+
+
+10-7,8
+5pts, 6pts
+reading end to end memory network code
+
+sed -n '$=' filename -> counting number of lines
+
+Distance.c - calculate cosine similarity 
+
+
+
+Preparation:
+GloVe vs word to vec
+math notation
+224d lecture + assign1
+python and c code walk through and play around
+
+googlenews.bn word2vec negative sampling datasets see: https://github.com/3Top/word2vec-api
+freebase googlenews.bn word2vec skip-gram
+wikitext cut short 
+
+why cosine similarity? + 2 words/phrases + negative sampling(skipgram) + huffman tree (cbow) + reduce to 2d project down high dimentional vector into lower space TSNE/PCA  + mapping entity to vector space to show similar entity cluster really well together
+specifying negative words to not included in the search 
+singular value decomposition + partial derivatives
+stockahastic gradient descent
+dynamic logistic regression
+
+
+top 2 dimentions corresponding to top 2 singular values
+low dimentional vector -> singular value decomposition of coocurence matrix 
+dense vector representation for every word
+
+SVD computational expensive
+instead of SVD -> directly learn low-dimentional word vectors
+
+word2vec is SVD
+the output vector is window-based co-occurence matrix summed together in a colum n (for its probability)
+as an improvement to SVD as easily incorporate new sentence(window)/document or add word to vocab -> does it in a very online way
+
+optimize cost/objection function -> maximize/minimize
+
+the derivatives of gradients to backprog is too computational expensive 
+approximate normalization constant or define negative prediction
+
+syntactic and semantic word analogy that happens to fall out when you compress lower dimentional vector
+by just doing vector subtration in embedding space
+-> apple and apples -> word vectors difference is just several, a couple of, many etc -> so car cars difference should also be the same with the presense of several, couple of, many etc
+e.g. shirt - clothing = chair - furniture
+king - man = queen - woman
+
+
+Problems of discrete representation
+wordnet(taxonomy) -> nltk.corpus -> hypernyms e.g. carnivore -> mammal -> panda
+synonym sets (good)-> does not give you the exact context + missing hyped badass new words + labour to maintain + other language not well maintained
+knowledgebase -> brand: ford, mecedes, fox ...
+
+Dimentionality
+20k speech
+50k PTB
+500k big vocab
+13M Google 1T
+sparse representation -> capture only that index
+only problem of 1 hot is awesome and good have no connection -> cannot tell similarity between vectors
+
+ 
+Bag of words representation + logistic regression -> spam classifier 
+
+using statistics to define meaning
+e.g. politics, love, donald trump
+" you shall know a person or a word by the company it keeps and neighbour it has"
+represent a word by means of its neighbours
+
+co-occurence matrix of a large text corpus vs word to vec
+latent semantic analysis -> word document co-occurence matrix -> capture context or words representing general topic of the document
+word to vec -> word window co-occurence matrix-> specific syntactic POS and semantic information
+co-occurence matrix provides visualization of window based word to vec
+
+text corpus = wiki datasets
+word vectors = weight matrix as each word would become a vector representing probabilities after training
+
+common crawl -> all web pages for 7 years
+800b tokens
+
+
+Count-based
+LSA, HAL (lund & burgess)
+COALS (Rohde)
+Hellinger-PCA (lebret & Collobert)
+
+Direct-prediction
+NNLM
+HLBL
+RNN
+Skip-gram/Cbow
+
+
+
+
+Other models:
+LSTM
+recurrent neural network -> bi-directional, deep
+convolutional neural network
+end to end memory network
+dynamic memory network -> attention mechanism + recurrent neural network-> named entity recognition
+
+
+
+10-9 4pts
+backprog python implementation
+error/cost/objective function -> the answer you do crazy matrix multiplication for 
+
+10-10 4pts
+
+entire day on neuralnetwork-simple.py
+rugby
+
+chatbot:
+retrieval based model with predefined resposes e.g. i am fine
+pick response based on input and context
+rule based expression matching
+hueristic
+
+classifier -> intent of questions
+
+harder -> generative model
+neural network on film dialogue + IT support to have domain knowledge
+open domain -> talk about any thing -> does not exist yet
+closed domain -> a specific subject
+sequence to sequence model = LSTM1 + LSTM2
+
+
+
+
+
+10-11, 12, 13
+INTRALOGUE
+
+TASKS/SOLUTIONS:
+1. taxonomy of architect topics
+2. specific architect chat bot
+hashtag to indicates context
+dealing with how one feels about a name
+named entity classifier
+auto-suggest name entity: disney -> disneyland, mickey -> mickey_mouse
+consistent context using the most frequent context words
+prepossessing of data extracting only noun phrases, getting rid of determinants, verb, prepositions 
+train image with words -> suggest images
+or just use images already with labels
+
+challenges:
+multiple words query
+how to find out the categories of words/names/brands/noun ? - wiki categories
+
+use cases: 
+envato ceo -> youtube content
+hello kitty -> cartoon, arts + other context/topics/catelogues
+chelsea, stamford bridge -> soccer
+
+RESEARCH:
+stanford nlp papers
+end to end memory network + globe
+Stanford Named Entity Recognizer (NER)
+224n 224d 124
+part of speech tagging -> e.g. nnp -> noun, jj -> adj => maybe only extract the noun phrase
+named entity recognition
+stemming - root stem of the word e.g. writing 's "stem" is writ - porterstemmer e.g. veri import pythonli python
+lemmatizing - better -> good
+stop words - list of most common words -> e.g. a i he she to etc -> create your own to filter
+word net - synonymn using synsets
+scrapy for crawling + apache tika, boiler pipe for filtering main body of text other than side articles
+tensorflow - train neural network with label
+chunking - grouping parts of speech/regular expression together e.g. group noun + adj, adv into noun phrases -> descriptive phrases surrounding that noun
+chinking - chink/remove from chunk e.g. verb, determinant, preposition
+stanford named entity recognizer - train your own model http://nlp.stanford.edu/software/crf-faq.shtml
+
+
+
+
+FUTURE PREPARATION:
+tensorflow to neural network
+amazon to train network
+
+
+WORK LOG:
+- try accuracy of cbow model using c
+comments: not latest enough, not relevant if too few words
+
+- NLTK library
+chunking - regex
+see: https://pythonprogramming.net/regular-expressions-regex-tutorial-python-3/
+see: https://www.youtube.com/watch?v=imPpT2Qo2sk&index=5&list=PLQVvvaa0QuDf2JswnfiGkliBInZnIC4HL
+bug in downloading NLTK library is pissing me off -> python3 + nltk.download('all') + central library
+
+- using python to run word to vec
+
+- noisy terms and stop words result using new datasets
+
+
+
+
+
+
+
+
+
+
+10-15 SAT
+CNN
+filter looks for color contrast and edges
+reason using filter -> look for pattern (i.e. edges color contrast tgt) rather than entire picture
+
+what the math behind that filter uses to determine certain pattern occur and in which regions????
+weights and biases of convolutional layer affects how operation is performed -> tweaking these numbers affect the effectiveness of filtering process
+flashlight structure
+the reasons there are layers -> each convolutional layer captures specific type of features 
+each layer shares the same weight parameters
+
+relu + pooling -> build up simple pattern discovered by convolutional layer
+relu -> recified linear unit
+varnishing gradients
+relu -> gradients are held constant at each layer during backprop
+
+pooling -> dimentionality reduction -> number of possible patterns becomes exceedingly large -> net focuses on only relevant patterns discovered by convolution and relu
+
+
+
+SIRA
+Recommendation system: (basic nerual network)
+Amazon deep scalable sparse tensor network engine (DSSTINE) -> that works like caffe with only configuration file to set hyperparameters
+data-parallel training split data into multiple GPU
+model-parallel training split model across multiple GPU
+filezilla as gui to aws
+convert to netCDF format -> optmized for dsstine -> index files for neurons and features + netCDF file
+
+
+10-16 SUN
+SIRA
+Chatbot:(NLP + intent classifier + hard code response OR LSTM, end to end memory network OR API)
+IT IS THE YEAR OF CHATBOT
+
+1. Retrieval-based model -> pre-defined responses based on input and context
+
+ Rule-based expression matching with ML classifier
+facebook messenger chatbot api -> rule-based expression matching : intent + entities -> hard-code responses to potential questions
+-> classifier's main job to understand intent
+
+2. Generative model
+does not rely on any sorts of responses -> generate them from scratch
+
+Google research: neural conversation model -> torch + lua 
+nerual convo dataset : cornell movie dialog
+neuralconvo.Seq2Seq -> 2 LSTM RNN (encoder + decoder)
+encoder turns variable input length of sentence into a fixed dimentaionl vector representation -> thought vector 
+given enough datasets -> probabilities of thought vectors 
+WHY NLL negative log likelihood???
+  
+
+LSTM: predicts next sentences given previous sentences in conversation
+e.g.
+movie dialogue datasets + IT support datasets -> domain knowledge to be expert + conversational knowledge in closed domain 
+open domain not possible 
+
+
+API VERSION:
+wit.ai
+nuance mix
+siri 
+api.ai
+
+wit - acquired by fb, fb marketing machine behind them
+PROS: speech recognition + open instances(fork other as chatbot backend)
+CONS: buggy, sparse docs, no options to create synonyms for entities 
+
+nuance - made by dragon naturally speaking, stick to big enterprise deals  
+PROS: GREAT speech recognition
+CONS: no instant sign up, not for independent dev
+
+Siri 
+PROS: great doc 
+CONS: only 6 different app types, only work with apple devices 
+
+api.ai 
+PROS: easy to use(simple app in 2 hours) + great docs + integrate/ deploy to service provider of choice + tons libraries 
+CONS: charged 
+
+entites -> a model object refer to in conversation -> i.e. mention of red in convo -> auto detect color 
+e.g. flower -> tulips, roses, bulbs (entities synonyms)
+e.g. color -> blue, black, red etc   
+
+intent -> abstraction of user's specific request users made which is then maps to an action (speech response) 
+e.g. i'd like to buy some flowers, i want flowers, can i get some flowers -> speech response (sure what kind of flowers you want?)
+-> specify context + type specification + output context(system keeps track of what have been said) i.e. set output context of proposal to next intent 
+i.e. proposal intent 
+-> what flower intent(flower specification) + looking for flower entity +saveFlowerType + speech response 
+-> what color intent(color specification) + looking for flower entity + saveColorType + speech response
+
+
+ 
+ml detects statements that are worded differently as the same proposal -> categorizes intent for corresponding responses
+
+if you want to train it yourself using canto -> cluster/classify similar sentences into same intent based on response, thats the only machine learning part of api.ai
+
+
+SIRA
+Read picture generate description:(CNN + LSTM RNN/ CNN-LSTM encoder sentence captions and joint space + mutltimodal space + SC-NLM decoder + GRU RNN skip thought vectors of captions + style shifting + RNN generate front and back stories decode vector to story 
+
+Lasagna walkthrough -> generate.py
+Convolu nn ->  pre-trained model/synpses called vgg19
+caffe.Net(config.paths['vgg_proto_caffe'], config.paths['vgg_model_caffe'], caffe.TEST)
+return an array of features (highest level features right before output layer)
+embed image into joint space/ multilingual features model based on unifying visual semntic embeddings
+compute nearest neighbours
+skip thought vector
+gated recurrent units (GRUS) - upper gate and reset gate
+
+skipthoughtsvectors = skipthoughts.encode(z['stv'], sentences, verbose = False)
+shift = skipthoughtsvectors.mean(0) - z['bneg'] + z[bpos'] # style shifting
+passage = decoder.run_sampler(z['dec'], shift, beam_width=bw)
+
+
+
+SIRA
+Rap lyrics generator: (unsupervised rhyme scheme identification in hip hop lyrics using hidden markov models)
+markov model -> cloudy, sunny, rain
+hidden markov model -> calculate rain probability through observing number of umbrellas
+rankSVM partially powered by deep neural network -> extract features from rap corpus to feed ot their model
+features: rhyming, structural similarity, semantic similarity(requires deep RNN)
+rank svm model
+Rhyme density
+
+
+SIRA
+self driving car:
+SLAM
+simulataneous localization and mapping + reinforcement learning
+reinforcement learning -> map state, action and reward
+end to end neural network
+
+Long term planning for short term prediction -> a paper on new algo to accomplish the task  
+Q-learning
+BUT HOW IS A SONIC DETECTOR VACCUM CLEANER DIFFERENT THAN MACHINE LEARNING VACCUM CLEANER
+
+
+10-16
+WORK LOG:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+the reason they put a name on the tech is because your brain automatically stop asking how the tech works when there is a name -> abstraction
+
+
+
+
+
+
+
+Language model (computes the probability for a sequence of words)
+machine translation -> word ordering + word choices
+RNN -> label could be next word or sentiment 
+vanishing and exploding gradient
+NER
+entity level sentiment in context
+opinionated expressions
+
+
+
+MACHINE LEARNING LEARNING GOALS:
+neural network -> regularization to solve overfitting of data
+
+
+
+
+
+
+
+
+
+Mid-term:
+SVM
+softmore
+neural
+logistic
+linear
 
 
 
@@ -2198,4 +2727,5 @@ open(), strdup(), typedef.
 int putchar(int c) // putc(c, stdout)
 int fputc(int c, FILE* stream); // writes the character, cast unsigned char to stream
 int putc(intc, FILE* stream);
+euler number is irrational and transcendental
 
