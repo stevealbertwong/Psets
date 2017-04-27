@@ -1,7 +1,0 @@
-
-6-7
-1. #106b 
-what is pro? 
-why Qt creator uses clang 64bit kit to configure project?
-
- 
