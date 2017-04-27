@@ -23,16 +23,9 @@ cs106x 2 weeks
 cs108 3 weeks
 cs109 4 weeks
 
-MATH
-Math51 8 weeks
-Linear Algebra 4 weeks
-Multivariate Calculas 4 weeks
-Probability 4 weeks
-Integer Linear Programming
-
 SYSTEM:
 cs1u 1 week
-cs107 + cs61 + 15-213 8 weeks 
+cs107 4 weeks 
 cs110 4 weeks 
 cs140 6 weeks 
 cs240 4 weeks
@@ -41,19 +34,18 @@ cs144 4 weeks
 cs244 4 weeks
 cs155 4 weeks
 
-DATA STRUCTURE & ADVANCED ALGORITHM
-Hackerrank, geeks for geeks
+DATA STRUCTURE
 cs161 4 weeks
 cs261 4 weeks
 cs166 4 weeks
 cs168 4 weeks
 cs167 4 weeks
 cs267 4 weeks
-Link Analysis 2 weeks
 
 MACHINE LEARNING
 cs228 4 weeks
 cs221 4 weeks
+Math51 4 weeks
 cs229 4 weeks
 cs231n 4 weeks
 cs224d 3 weeks
@@ -72,14 +64,6 @@ cs276 1 week
 cs246 4 weeks
 cs224w
 21 months
-
-
-COMPETITIONS:
-Kaggle
-Blog
-
-
-
 
 
 Agile Development: 
@@ -4001,33 +3985,6 @@ chatbot
 evaluation
 
 1-17 tues
-
-1-21 sat
-minimizing euclidean distance between points and chosen lines = maximizing variance of projection of point set (i.e. length of the vector that travel the span) 
-
-1-27
-i am really concerned about rachel
-
-1-28 sat
-cs61 labs + 15213 labs
-
-
-1-29 sun
-
-
-
-1-30 mon
-
-
-1-31 tue
-
-
-
-2-1
-2-2
-
-
-
 
 
 Linear Algebra

@@ -23,16 +23,9 @@ cs106x 2 weeks
 cs108 3 weeks
 cs109 4 weeks
 
-MATH
-Math51 8 weeks
-Linear Algebra 4 weeks
-Multivariate Calculas 4 weeks
-Probability 4 weeks
-Integer Linear Programming
-
 SYSTEM:
 cs1u 1 week
-cs107 + cs61 + 15-213 8 weeks 
+cs107 4 weeks 
 cs110 4 weeks 
 cs140 6 weeks 
 cs240 4 weeks
@@ -41,19 +34,18 @@ cs144 4 weeks
 cs244 4 weeks
 cs155 4 weeks
 
-DATA STRUCTURE & ADVANCED ALGORITHM
-Hackerrank, geeks for geeks
+DATA STRUCTURE
 cs161 4 weeks
 cs261 4 weeks
 cs166 4 weeks
 cs168 4 weeks
 cs167 4 weeks
 cs267 4 weeks
-Link Analysis 2 weeks
 
 MACHINE LEARNING
 cs228 4 weeks
 cs221 4 weeks
+Math51 4 weeks
 cs229 4 weeks
 cs231n 4 weeks
 cs224d 3 weeks
@@ -72,14 +64,6 @@ cs276 1 week
 cs246 4 weeks
 cs224w
 21 months
-
-
-COMPETITIONS:
-Kaggle
-Blog
-
-
-
 
 
 Agile Development: 
@@ -416,8 +400,8 @@ push the limit -andriod networking -1pt
 	HttpURLConnection -> JSONObject
 
 andriod setup -1pt
-âŒ¥F7 - find all places classes are used
-âŒƒSpace - complete
+œôû¥F7 - find all places classes are used
+œôúãSpace - complete
 F1 - documentation
 
 
@@ -1688,10 +1672,10 @@ ps xw | grep Preview
 
 ls -alrth myfile # list metadata on myfile
 source ~/.bash_profile // refresh changes made to alias
-echo "line1" >> myfile # append via â€™>>â€™ to a file
+echo "line1" >> myfile # append via œôòù>>œôòù to a file
 rm -i myfile2
 cp -av /home/ubuntu/techblog /home/ubuntu/techblog2
-rmdir mydir # wonâ€™t work because thereâ€™s a file in there
+rmdir mydir # wonœôòùt work because thereœôòùs a file in there
 rm -rf mydir # VERY dangerous command, use with caution
 rm myfile*
 mv git bin // move git into bin directory
@@ -1734,7 +1718,7 @@ sudo apt-get install -y make gcc // install gcc and make
 3 $ sudo apt-get install -y python-software-properties python g++ make
 4 # Add a new repository for apt-get to search
 5 $ sudo add-apt-repository ppa:chris-lea/node.js
-6 # Update apt-getâ€™s knowledge of which packages are where
+6 # Update apt-getœôòùs knowledge of which packages are where
 7 $ sudo apt-get update
 8 # Now install nodejs and npm
 9 $ sudo apt-get install -y nodejs
@@ -2112,9 +2096,9 @@ softmax + cross entropy = loss function
 cs229 lecture notes
 Overview of different learning models
 
-supervised learning = learning algorithms that model p(y|x; Î¸) probability of y given x, parameterized by Î¸
+supervised learning = learning algorithms that model p(y|x; œô§¸) probability of y given x, parameterized by œô§¸
 
-logistic regression modeled p(y|x; Î¸) as hÎ¸(x) = g(Î¸T x) where g is the sigmoid function
+logistic regression modeled p(y|x; œô§¸) as hœô§¸(x) = g(œô§¸T x) where g is the sigmoid function
 
 
 Twitter wiki words association
@@ -2143,15 +2127,15 @@ huffman tree to represent the frequency of word + represents in binary
 
 see: https://buss_jan.gitbooks.io/word2vec/content/chapter2.html
 
-A word is the basic unit of discrete data, defined to be an item from a vocabulary indexed by 1,...,V. We represent words using unit-basis vectors that have a single component equal to one and all other components equal to zero (one-hot encoding). Thus, using superscripts to denote components, the vth word in the vocabulary is represented by a Vâˆ’vector w such that wv=1 and wu=0 for uâ‰ v.
+A word is the basic unit of discrete data, defined to be an item from a vocabulary indexed by 1,...,V. We represent words using unit-basis vectors that have a single component equal to one and all other components equal to zero (one-hot encoding). Thus, using superscripts to denote components, the vth word in the vocabulary is represented by a Vœôø²vector w such that wv=1 and wu=0 for uœôù v.
 
 A document is a sequence of N words denoted by w = (w1,w2,...,wN), where wn is the nth word in the sequence.
 
 A corpus is a collection of M documents denoted by D=w1,w2,...,wM.
 
-A word embedding W:wordsâˆ’>â„n is a parameterized function mapping words in some language to high-dimensional vectors (perhaps 200 to 500 dimensions). For example, we might find:
-W("cat")=(0.2,âˆ’0.4,0.7,...)
-W("mat")=(0.0,0.6,âˆ’0.1,...)
+A word embedding W:wordsœôø²>œôõÝn is a parameterized function mapping words in some language to high-dimensional vectors (perhaps 200 to 500 dimensions). For example, we might find:
+W("cat")=(0.2,œôø²0.4,0.7,...)
+W("mat")=(0.0,0.6,œôø²0.1,...)
 
 
 singular value decomposition
@@ -2333,19 +2317,6 @@ recurrent neural network -> bi-directional, deep
 convolutional neural network
 end to end memory network
 dynamic memory network -> attention mechanism + recurrent neural network-> named entity recognition
-
-LSA / LSI
-see: http://stats.stackexchange.com/questions/4735/what-are-the-differences-among-latent-semantic-analysis-lsa-latent-semantic-i
-
-LSA and LSI are mostly used synonymously, with the information is retrieval community usually referring to it as LSI. LSA/LSI uses SVD to decompose the term-document matrix A into a term-concept matrix U, a singular value matrix S, and a concept-document matrix V in the form: A = USV'
-
-HAL - Hyperspace Analogue to Language
-sifts through text keeping track of preceding and subsequent contexts
-Vectors are extracted from these (often weighted) co-occurrence matrices and specific words are selected to index the semantic space. In many ways I'm given to understand it performs as well as LSA without requiring the mathematically/conceptually complex step of SVD. See Lund & Burgess, 1996 for details.
-
-
-
-
 
 
 
@@ -3022,7 +2993,7 @@ see: http://stackoverflow.com/questions/27860652/word2vec-negative-sampling-in-l
 -> The idea of word2vec is to maximise the similarity (dot product) between the vectors for words which appear close together (in the context of each other)
 -> and minimise the similarity of words that do not
 
-Parameterizing skip-gram and modeling the conditional probability p(c|w; Î¸) using soft-max
+Parameterizing skip-gram and modeling the conditional probability p(c|w; œô§¸) using soft-max
       v_c * v_w
  -------------------
    sum(v_c1 * v_w)
@@ -3469,7 +3440,7 @@ apply simplified assumption called Markov Assumption -> i.e. compute 1-3 previou
 MARKOV ASSUMPTION -> n-gram -> screw up everything and neural network come to rescue
 unigram -> most frequent word -> random sequence of words based on term frequency
 bigram -> slightly more intelligent, conditioned on single previous word -> but no connection over long sequence of words
-n-gram model in general -> insufficient, long distance dependencies i.e. computer, which â€¦ is crashed -> crashed is related to computer
+n-gram model in general -> insufficient, long distance dependencies i.e. computer, which œôó¦ is crashed -> crashed is related to computer
 
 RELATIONS EXTRACTION
 structured knowledge base
@@ -3505,14 +3476,7 @@ see: https://www.youtube.com/watch?v=hLsrPsFHPcQ
 -> $ indicates end of a suffix when encode in trie
 -> $ enforce the rule to put words in dictionary order, shorter of the word goes first 
 -> encode all possibility of suffix into a trie -> each path from root to leaf represents a suffix + each suffix is represented by some path from root to leaf
--> number of times occur -> number of leaf nodes below path given we donâ€™t fall off -> leaf node can be counted via depth-first traversal
-
-Suffix Tree - find all substrings
-compressed suffix trie
-binary tree -> a tree where all non-leaf nodes have exactly 2 children
-suffix tree -> a tree where non-leaf nodes could have more than 2 children
-
-
+-> number of times occur -> number of leaf nodes below path given we donœôòùt fall off -> leaf node can be counted via depth-first traversal
 
 
 RANGE MINIMUM QUERY
@@ -3568,11 +3532,10 @@ HOW TO BUILD RELATION EXTRACTORS
 
 Richer relations
 - relations that hold between specific entities e.g. located-in, founded, cures
-- e.g. George Marshall, Secretary of State of United States -> 3 named entities, 1 pattern â€œPER, POSITION of ORGâ€
+- e.g. George Marshall, Secretary of State of United States -> 3 named entities, 1 pattern œôòüPER, POSITION of ORGœôòý
 
 
 2. Supervised machine learning
-
 
 -> KEY: extract entities-based features 
 -> BUT YOU NEED TO HANDLABEL RELATIONS BETWEEN ENETITIES + DO NOT GENERALIZE WELL TO DIFFERENT GENRES
@@ -3612,18 +3575,6 @@ Snowball 2000
 TEXTRANK
 see: http://bdewilde.github.io/blog/2014/09/23/intro-to-automatic-keyphrase-extraction/
 implemented in python
-
-DivRank
-ExpandRank
-CollabRank
-Annotated Suffix Tree Similarity
-
-improvement on textrank
-1. normalization of candidates -> i.e. normalize term frequency -> taking average of incoming score 
-2. co-occuring windows size, weighted graph
-
-Pairwise Ranking SVM
--> given a query, rank based on click
  
 
 LAMBDA
@@ -3643,448 +3594,6 @@ The opposite of dropwhile(), takewhile() returns an iterator that returns items 
 
 
 Google knowledge graph search
-
-
-
-12-3 sat
-PAPER
-1. attention mechanism - Bahdanau 2014
-neural machine translation -> attention to align and translate
-- annotation -> encoder maps input sequence -> intuition: used as a syntactic mapper between english and french
-each annotation contains information about whole input sequence 
-
-bi-directional RNN -> transform source sequence in a series of hidden states with equal length -> RNN short term memory since only backpropagate 7 steps -> 
-
-weight alpha is just softmax of exp i.e. associated energy (exp is an alignment model that scores how well inputs and outputs match)
-weight -> backpropagable -> probability of which annotations (i.e. is relevant in translating output word) -> weighted sum of all annotations -> expectation over all possible alignments -> alpha reflects importance of annotation with respect to previous hidden state -> attention mechanism in decoder where decoder decides which part of sentence to pay attention to -> relieve the burden of encoder to encode all input sequence into a fixed length vector 
-
-
-how to determine a model is backpropagable???
-why latent variable is not backpropagable???
-
-SOCHER
-Socher 2011 unsupervised RNN -> paraphrase detection -> better way to tell document similarity
-compare phrases to see if same meaning -> unsupervised rnn and pair-wise sentence comparison of nodes in parsed trees
-pairwise comparison of all words in sentence to other sentence
-similarity matrix -> captures similairty between nodes and phrases in parsed tree (tree structure is trained by neural network to parse) -> variable sized pooling layer -> why not only root node similarity (work somewhat but not as well as similarity matrix, did lose information as squeeze k-dimentional vector to 1-d vector) -> therefore capture all pair-wise comparison between nodes and phrases -> why not just use similairty matrix to plug into classifier (compared sentences of different length produces different size matrix) -> variable sized pooling layer -> fixed size matrixto plug in neural network -> why min not average pooling -> distance function between compared words i.e. small numbers indicates more similar -> the fact that other disimilar words exist does not hurt the similarity that much therefore min not average -> microsoft research paraphrase corpus
-
-Matrix - vector RNN
-compositionality through recursive matrix vector spaces
-
-MV-RNN relationship classification
-or other classifier such as RNN, LinMVR, SVM
-e.g. cause effect, entity origin, message topic
-state of the art: MV-RNN or SVM with tons of features
-
-new compositional model
-recursive neural tensor network -> allow more interaction and combination of different words and phrase vectors
-
-
-given a diagonal line in similarity matrix -> 2 sentence aligh quite well
-
-
-
-Writing an essay should be based on reference books. Even human ourselves cannot write an essay from scratch. 
-Using math to represent human. But how?
-
-
-APIAI demo
-
-
-
-
-
-
-12-5, 6, 7, 8, 9 
-WORKLOG
-
-encoding error when copying from internet -> convert unicode to ascii without errors
-see: http://stackoverflow.com/questions/2365411/python-convert-unicode-to-ascii-without-errors
-# -*- coding: utf-8 -*-
-document = document.decode("utf8").encode('ascii', 'ignore')
-
-sklearn.feature_extraction.text.CountVectorizer
-bow is a co-occurence matrix with sentence id as row and word token id as column
-
-DEMO cbow debug
-
-Deadline chatbot presentation file
-
-adjacency matrix is a square matrix used to represent a finite graph -> i.e. similarity matrix  -> speed up look up time of what edges a vertex is connected to
-textrank - sentence using networkx
-pagerank python implementation
-
-IMPROVING TEXTRANK
-PhrazIt lda + lsa + word2vec
-LLR x MMR log likeihood ratio + maximal marginal relevance -> see: https://www.youtube.com/watch?v=Vw-7XkP9H1o -> complex question answering based on multiple documents + query
-simplfying sentences 
-annotated suffix tree
-
-
-12-12, 13, 14 15 16
-WORKLOG
-LSA - SVD intuition + implementation
-
-
-12-19,20,21,22,23
-next week tasks: 
-1. LSA speed up
-2. noun phrases machine learning extraction
-3. taxonomy/relation extraction -> categorization
-4. text rank weighted graph
-
-others: 
-categorization -> NER, categorization 
-word2vec wiki cbow -> set + uniquely belong to a word
-Glove (maybe)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-EXAMS (linear algebra + CMU15-213)
-RULE: hours based: 8-10:A, 5-7:B
-
-12-16 3pts
-15-213 lecture7  
-passing control - stack pointer, arguments passed to registers, program counter, call pop procedure, rax + rbx compute, rdi rsi rdx rcx r8 r9 store arguments, stack to store state of function, registers store value across memories for sharing
-passing data + managing local data - rbp frame pointer 
-recursion -> multiple simultaneous instantiations of single procedure i.e. reentrant -> state of instantiation -> arguments, local variable, return pointer -> one function executing at any given time, other function frozen -> 
-stack frame = state for single procedure instantiation
-stack store state for one function in recursion -> when function finished execution, all states popped, make room for new function
-$rbp -> frame pointer/base pointer (optional pointer)
-
-
-bomb lab 
-see: http://web.eecs.umich.edu/~sugih/pointers/gdbQS.html
-
-gdb, objdump + understand assembly + procedure + control flow + memory during execution
-strings bomb > bomb-strings, objdump -d > bomb-assembly
-break main.cpp:55, break main, break *0x400e87, delete 1, 0000000000400e87 = 0x400e87, 
-run, r, step, s, next, n, continue, c, stepi take 1 instruction step
-break phase_1 -> stepi + disas + info registers (i r)
-until *0x
-
-p/x $eax -> print
-x /25c 0x400e87 -> examine
-x /NUM SIZE FORMAT
-x /24wx $rsp
-x /s $rdi -> loook at 1st argument as string
-x /d $rdi -> as integer
-
-0x400ed4 <+72> je/jne 0x400eba<phase_2+46) (smaller address means loop + 46 is where the loop starts)
-
-esi vs rsi -> esi set upper 32bits to 0
-
-leaq -> create pointer i.e. instead of putting the value in memory into rdi, create a memory reference i.e. pointer in rdi -> movq (memory reference of 8(%rsp)) %rdi
-
-%rax seems to the value sharing by functions via return /return value
-ret instruction always takes what stack pointer pointed to as return address
-
-callee-saved i.e. callee must save & restore
-when trying to alter, callee save the value on stack
-
-pushq %rbx -> callee saved push saved $rbx value on stack 
-
-cmpg/jne/testq -> conditional statement 
-testq-> only purpose is to set condition flag/code in register
-
-ABI = application binary interface  
-
-list
-disas -> no frame selected ???? why
-info registers -> rsp stack pointer, rip instruction pointer, rax holds return, rsi rdi holds arguments of function
-
-12-17 sat -5pt
-bomb lab 4pts
-lecture7 1pt
-
-12-18 sun -6pts  
-stack discipline + recursion -> each recursed function will have its own stack frame rather than sharing the same stack
-
-average run of the mill programmer - i am not even close to that
-single byte register
-compg %rsi, %rdi
-setg %al # set 1 byte of %rax when greater than
-movzbl %al, %eax # zero out all except lowest order bit of %rax
-
-%eax mean %rax with upper 32 bytes set to 0
-
-%rdi = 1st argu
-%rsi = 2nd argu
-calling function will go to %rax to look for return value
-
-12-19 -2pts
-matrix -> eigenvalue -> determinant -> reduced row echelon form to get to identity matrix -> linear transformation: transformation matrix S i.e. linear transformation on identity matrix -> manuel vs formal math matrix form -> determinant related to inverse -> sub-matrix
-linear transformation = manuel = row operation
-A * A.I = I
-determinant = ad-bc -> whether matrix is invertible -> Det(A) = |A| 
-
-linearly dependent column = not invertible = det =0 = linear combination of each other
-
-
-12-20 -2.5pts
-det(lamda * I - A) = 0
-
-12-21 -5pts
-nullspace
-orthogonal
-diagonalization
-rank
-U*Z -> unit vector * sigma the stretching vector
-
-why SVD -> gives best axis to project on -> min sum of squares of projection errors -> minimum reconstruction error
-best low rank k approximation -> min||A-B|| where rank(B) = k 
-
-sigma -> strength of the import, variance spread on first right singular vector axis, importance of that vector
-
-V -> axis to project the points
-UZ -> coordinates of the points in projection axis
-
-PCA 
-see: https://www.youtube.com/watch?v=F-nfsSq42ow
-trying to relate SVD to PCA with dimentionality reduction
-many ways to do dimentionality reduction -> most popular way is PCA and SVD
-
-statistically dependent -> redundancy
-
-spectral decomposition 
-matrix factorization
-
-
-
-12-22 3.5 pts
-attack-lab read up
-
-12-23 2.5pts
-hierarchical softmax
-
-negative sampling
-see: http://stats.stackexchange.com/questions/176658/negative-sampling-expectation-in-word2vec-algorithm
-
-12-24 2pts WTF entire day wasted on fitness and pancake and how i met your mother
-WORKLOG
-andrew ng - dev set test set
-
-attack lab 
-gadget sequences of bytes that ends in c3 (ret)
-pop + move + constant 
-
-12-25 5pts WTF AGAIN 
-different version of gcc and different compiler settings
-leaq directly computes the the value referred by memory address rather than doing memory address arithmetic i.e. &x[i]
-salq -> shift left e.g. salq $2, %rax -> shift left by 2 = multiply by 4 in binary
-
-driving lesson
-fiction zone, clutch, throttle/gas, brake
-throttle 1.5-2 rpm, not rafting up to 3 rpm and dump it
-1.5 throttle hold + clutch release -> start the car
-
-1st gear + clutch with brake to stop
-
-be smooth on/off throttle in 1st gear as ratio so small
-
-1st gear -> 2nd gear
-3.5 rpm -> lift off throttle + clutch + switch to 2nd gear -> keep at 2-3 rpm
-
-speed bump 
-brake til 1.5 rpm -> clutch + shift to 1st gear -> clutch + throttle til 3.5 + shift to 2nd gear
-
-2nd -> 3rd 
-4 rpm -> clutch in off the gas -> shift to 3rd gear -> throttle + release clutch
-
-3rd -> 2nd
-clutch in -> 3rd to 2nd + blip -> release clutch -> brake 
-
-i.e. up a gear -> lift
-i.e. down a gear -> blip
-
-normal driving -> 1.5 - 2 rpm below 3.5
-
-
-reverse 
-
-hill start
-
-rpm = revolution per minute = rev/min
-matching rev
-torque -> moment of force -> 1st gear lots of torque because of short gearing but cant reach a high speed -> given same speed, higher gear lower rpm i.e. more torque/power to main same rpm -> at given speed, different gear = different rpm -> clutch disk spine the transmission connect to the gear -> pressure plate connected to flywheel, always rotating at engine's speed -> e.g. 3rd to 2nd, given same speed, downshift gear cause clutch disk spin higher rpm, therefore blip engine to rev match speed of clutch disk
-
-when to shift gear
-higher GR = Higher Torque of wheel
-2nd gear to turn
-1st gear to up hill / start / stop / slow traffic crawling
-
-why and when stall ? i.e. engine fails to turn drive shaft
--> in general, fighting its own pumping losses, resistances of car wheels, entire drive shaft it tries to turn
--> Engines have very little power and torque at idle speed. When the wheels stop, the engine has to stop as well, unless the engine is decoupled by using the clutch -> i.e. the engine stops running when it runs below 0.5rpm -> either clutch disengage /+ neutral gear
--> low speed, high gear -> first shake, then stall
--> when stop must be 1st gear otherwise stall ????? because you release gear ???? -> start after stop need to switch to 1st gear
--> release too quick stall -> engine were not able to engage clutch disk to rotate, bite point prevent stalling
--> release clutch without putting gas/moving stall
-
-
-feet off clutch, in gear, engine brake, engine slowing the car down by being in gear
-coasting -> clutch pressed driving -> free-wheel and not use the engine to move
-leaving the clutch down whilst making left or right turns is called coasting
-
-block gear changing -> no need to change down 3 gears when stoping
-when stop-> change to 1st gear otherwise car will stall -> i.e. wheel stopped but engine still moving
-
-when on hill build up speed and momentum before up gear
--> e.g. when turning right/up hill + low speed -> if not 1st gear -> car will shake due to pressure plate cannot move clutch disk 
-
-hand brake + neutral
-
-12-26 -2pts - driving day
-stack discipline -> callee saved -> always pushq %rbx + subq $16, %rsp -> addq $16, %rsp + popq% rbx -> saved %rbx value from call function, restore/pop the saved value on stack back to %rbx -> every function will treat %rbx this way unless it is not going to alter
-
-
-Linear Algebra
-PCA vs SVD 
-see: http://www3.cs.stonybrook.edu/~sael/teaching/cse549/Slides/CSE549_16.pdf
-see: http://stats.stackexchange.com/questions/134282/relationship-between-svd-and-pca-how-to-use-svd-to-perform-pca
-PCA finds a linear projection of high dimensional data into a lower dimensional subspace
- 
-12-27 - 5pts
-space, determinant, inverse
-
-
-12-28 -club
-12-29 -club
-
-12-30 - 1pt
-learn c - ex16
-pointers to struct + malloc
-strdup vs strcpy see: http://stackoverflow.com/questions/14020380/strcpy-vs-strdup
-
-
-12-31 -4pts
-linear dependence = not invertible = det(A) = 0
-
-
-1-1 - 6pts
-rank, eigenvalue, eigenvector, matrix factorization
-
-1-2
-
-1-7 - 5pts
-
-1-10 -2pts
-forget gate -> either 1 or 0 thats why any change of x would affect utimate value, if 0 does not affect, if 1 then no vanish/explode
-
-1-11
-1-12
-1-13
-evlaution + dev set in word2vec
-pickle vs joblib vs hfd5 vs csv
-multiple words searches in lsa
-
-1-14 sat
-chatbot
-
-1-15 sun
-chatbot
-
-
-1-16 mon
-evaluation
-
-1-17 tues
-
-1-21 sat
-minimizing euclidean distance between points and chosen lines = maximizing variance of projection of point set (i.e. length of the vector that travel the span) 
-
-1-27
-i am really concerned about rachel
-
-1-28 sat
-cs61 labs + 15213 labs
-
-
-1-29 sun
-
-
-
-1-30 mon
-
-
-1-31 tue
-
-
-
-2-1
-2-2
-
-
-
-
-
-Linear Algebra
-looking for patterns in matrix
-subspace = span = linear extension through negative plane
-
-linear combination + span 
-see: https://www.youtube.com/watch?v=Qm_OS-8COwU
-=> vector times scalar -> linear as just scaling them up not multiply vectors with each other -> span = sets of all linear combination of vectors -> any vector in R2 could be combination of 2 vectors -> negative to cover the all 4 quaters
--> i.e. span(V1, V2) = R2
-"Any n-number of linearly independant (not colinear) vectors in R^n space span that whole (R^n) space"
-
-see: https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/linear-independence/v/more-on-linear-independence
-linear independent -> no way to represent one by another / no linear combination of all vectors where at least 1 constant != 0 could result in a 0 vector
-linear independent set -> combination of sets of vectors -> algebra to solve and 0 is the only solution
-
-"span is looking for linear independence"
-"could we describe the whole space (R^n) with n-number (not n-dimentional) vectors" -> i.e. given only 2 equations and answers, we do not have a solution for 3 unknowns -> span graphical represents this
-"given a set of anwsers and solution, there is always a combination of constants/parameters to solve"  
-
-
-Linear Subspace
-see: https://www.khanacademy.org/math/linear-algebra/vectors-and-spaces/subspace-basis/v/linear-subspaces
-1. contains 0 vector
-2. closure under scalar multiplication
-3. closure under addition
-span(V1, V2, V3) = valid subspace of R^3
-span([1,1]) = valid subspace of R^3 
-subspace = span of linear dependent/colinear vectors
-basis of subspace = no redundency
-
-
-
-Learn C - ex17 heap stack allocation
-C program is like an interface/api/abstraction layer to memory
-fopen
-fread
-fwrite
-malloc
-free
-fflush
-strncopy
-atoi
-
-stream - a pointer to a FILE object that identifies the hard disk memory (stream)
-database -> a buffer to store string from fread input FILE object
-
-
-Datalab - Bitwise operator on integers (not float) -> bitwise arithmetic = binary arithmetic
-
-complement operation -> ~2 = -3 -> simply flip the bits of 2 = two's complement representation of -3
-see: http://stackoverflow.com/questions/791328/how-does-the-bitwise-complement-operator-work
-negative number is stored as 2's complement(inverting all the bits) of positive counterpart -> add 1 ->first bit is a sign bit
-
-1. bitXor - x^y using only ~ and & 
-
-2.
 
 
 ONGOING

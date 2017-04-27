@@ -1,0 +1,101 @@
+70: Stanford, MIT, Cal
+63: Caltec, Carneige Mellon, Princeton, Harvard
+56: Columbia, Cornell, UPenn, Maryland, Michigan, Georgia Tech, Waterloo
+51: UChicago, UT, Washington, UIUC, UCLA, RIT, Harvey Mudd, Middlebury
+47: Northwestern, Duke, JohnHopkins, UVA, Vanderbilt, USC, Lehigh, UCSD, Florida
+42: UMassAmherst, UNC, Buffalo, Davis, Arizona, FSU, Purdue, Stony Brook, VT, Rugters
+35: Temple, Penn State, Drexel, Worcester Polytech, TCNJ, NJIT, SMU, UT Dallas, SUNY Binghamton  
+
+>10: A+
+9: A
+8: A-
+7: B+
+6: B
+5: B-
+
+INTRO
+cs103 4 weeks
+cs41 2 weeks
+cs106a 2 weeks
+cs106b 3 weeks
+cs106l 2 weeks
+cs106x 2 weeks
+cs108 3 weeks
+cs109 4 weeks
+
+MATH
+Math51 8 weeks
+Linear Algebra 4 weeks
+Multivariate Calculas 4 weeks
+Probability 4 weeks
+Integer Linear Programming
+
+SYSTEM:
+cs1u 1 week
+cs107 + cs61 + 15-213 8 weeks 
+cs110 4 weeks 
+cs140 6 weeks 
+cs240 4 weeks
+cs143 4 weeks
+cs144 4 weeks
+cs244 4 weeks
+cs155 4 weeks
+
+DATA STRUCTURE & ADVANCED ALGORITHM
+Hackerrank, geeks for geeks
+cs161 4 weeks
+cs261 4 weeks
+cs166 4 weeks
+cs168 4 weeks
+cs167 4 weeks
+cs267 4 weeks
+Link Analysis 2 weeks
+
+MACHINE LEARNING
+cs228 4 weeks
+cs221 4 weeks
+cs229 4 weeks
+cs231n 4 weeks
+cs224d 3 weeks
+cs224u 3 weeks
+cs224n 3 weeks
+Convex Optimization 5 weeks
+
+MOBILE AND WEB
+cs193p 4 weeks
+cs193a 3 weeks
+cs142 3 weeks
+
+OTHERS
+cs124 4 weeks
+cs276 4 weeks
+cs246 4 weeks
+cs224w
+21 months
+
+
+COMPETITIONS:
+Kaggle
+Blog
+
+
+4-28 thurs
+MEMM
+networking 15213 cs110 server client socket bind, listen, accept, connect
+
+4-29 fri
+MEMM
+networking 15213 cs110 server client socket bind, listen, accept, connect
+
+4-30 sat
+
+5-1 sun
+
+5-2 mon
+linear algebra
+
+5-3 tues
+
+5-4 weds
+linear algebra
+
