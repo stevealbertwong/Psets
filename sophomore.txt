@@ -97,18 +97,28 @@ networking 15213 cs110 server client socket bind, listen, accept, connect
 proxy.c
 
 
-5-1 sun - 2 pts
+5-1 sun - 4 pts
 15213 lecture video
-networking assignments princeton uiuc stanford
+networking assignments princeton uiuc stanford osu washington(wetherall, labs + assignments) kentstate mit 
 
 
-
-
-5-2 mon
-linear algebra
+5-2 mon -4 pts
+cs144 slides 1 
+endianess.c
+cs144 lab1 reliable.c 
 
 5-3 tues
 
 5-4 weds
-linear algebra
 
+
+
+TODO:
+socket/system programming interface + java socket + berkeley sockets api  
+byte ordering vs network byte ordering
+protocal layering 
+packet switching (scale nodes to networks)
+routing
+UDP vs TCP
+cs144 reliable trasnport(checksums, acknowledgements, timesouts, retransmissions, sequence numbers)
+labs
