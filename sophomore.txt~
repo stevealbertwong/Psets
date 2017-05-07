@@ -102,13 +102,34 @@ proxy.c
 networking assignments princeton uiuc stanford osu washington(wetherall, labs + assignments) kentstate mit 
 
 
-
-
-5-2 mon
-linear algebra
+5-2 mon -4 pts
+cs144 slides 1 
+endianess.c
+cs144 lab1 reliable.c 
 
 5-3 tues
+library sms read through
+memm
 
-5-4 weds
-linear algebra
+5-4 weds - 6pts
+rlib.c
+reliable.c
+UDP lab
+memm.py
 
+5-5 thurs
+memm
+
+5-6 fri
+memm
+
+
+TODO:
+socket/system programming interface + java socket + berkeley sockets api  
+byte ordering vs network byte ordering
+protocal layering 
+packet switching (scale nodes to networks)
+routing
+UDP vs TCP
+cs144 reliable trasnport(checksums, acknowledgements, timesouts, retransmissions, sequence numbers)
+labs
