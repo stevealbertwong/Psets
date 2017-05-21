@@ -29,6 +29,7 @@ Linear Algebra 4 weeks
 Multivariate Calculas 4 weeks
 Probability 4 weeks
 Integer Linear Programming
+cs205a 4 weeks
 
 SYSTEM:
 cs1u 1 week
@@ -38,6 +39,8 @@ cs140 6 weeks
 cs240 4 weeks
 cs143 4 weeks
 cs144 4 weeks
+cs145 4 weeks
+cs149 4 weeks
 cs244 4 weeks
 cs155 4 weeks
 
@@ -128,6 +131,22 @@ reliable.c
 
 5-8 sun - 6pts
 reliable.c understanding sliding window implementation
+
+5-13 sat - 2pts
+reading sr_router.c 
+
+5-14 sun - 4pts
+ARP, DHCP, ICMP
+
+5-20 sat -1pt
+understanding mutex + conditional variable + semaphore
+implementing mutex
+socket programming
+
+5-21 sun -4pts
+mit 1801
+sigmoid instead of log in chain rule to explain features.T * output_error_signal
+pg-mutex-print.cc
 
 
 

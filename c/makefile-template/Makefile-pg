@@ -3,6 +3,8 @@
 CC=g++
 CFLAGS=-c -Wall
 LDFLAGS=
+
+# amend
 SOURCES=main.cpp hello.cpp factorial.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
 EXECUTABLE=hello
@@ -14,5 +16,8 @@ $(EXECUTABLE): $(OBJECTS)
 
 .cpp.o:
 	$(CC) $(CFLAGS) $< -o $@
+
+clean:
+	rm -f *.o $(EXECUTABLE)
 
 

@@ -1,0 +1,551 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+{\fonttbl\f0\froman\fcharset0 Times-Roman;\f1\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;\red109\green109\blue109;}
+{\*\listtable{\list\listtemplateid1\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid1\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid1}
+{\list\listtemplateid2\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\*\levelmarker \{disc\}}{\leveltext\leveltemplateid101\'01\uc0\u8226 ;}{\levelnumbers;}\fi-360\li720\lin720 }{\listname ;}\listid2}}
+{\*\listoverridetable{\listoverride\listid1\listoverridecount0\ls1}{\listoverride\listid2\listoverridecount0\ls2}}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\deftab720
+\pard\pardeftab720\sa321
+
+\f0\b\fs48 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pointer Cheat Sheet\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 This page is based on information that appeared on the tear-out Cheat Sheet from 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 C For Dummies, Volume II
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 .\
+\pard\pardeftab720\sa298
+
+\b\fs36 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pointer Pointers\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0
+\b0\fs24 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 A pointer must always be of the same type as the variable it's pointing at.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Declaring a pointer variable does not 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 create
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  the type of variable it points at. It creates a pointer variable.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Though pointers are declared with an asterisk they are not always used with an asterisk.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The asterisk is the unary 
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  operator. It is not the 
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  multiplication operator.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Pointers 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 must
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  be initialized before they can be used.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Initialize a pointer by assigning it to a variable; the variable must be of the same type as the pointer.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To assign a pointer to a variable, use an ampersand with the variable's name.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 The address-of unary operator 
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 &
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  is not the same as the bitwise 
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 &
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  AND operator.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\f1 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 m_address = &memory;
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To assign a pointer to an array, do not use the ampersand:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\f1 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 s_address = string;
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \uc0\u8232 The pointer 
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 s_address
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  would be used on the 
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 string
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  array's elements.\
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 To assign a pointer to an array element, use the ampersand:\
+\pard\tx220\tx720\pardeftab720\li720\fi-720\sa240
+\ls1\ilvl0
+\f1 \cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 element = &string[2];
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls1\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Without an asterisk, an initialized pointer holds a memory address.\
+\ls1\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 With an asterisk, an initialized pointer references the value stored at its address.\
+\pard\pardeftab720\sa298
+
+\b\fs36 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Typical Pointer Setup and Use\
+\pard\pardeftab720\sa240
+
+\b0\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 First, create a pointer of the proper type:\
+\pard\pardeftab720\sa240
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 float *f;
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+Second assign it to a variable's memory location:\
+
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 f = &boat;
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+Finally, use the pointer:\
+
+\f1 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 printf("%.0f",*f);
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \
+\pard\tx220\tx720\pardeftab720\li720\fi-720
+\ls2\ilvl0\cf2 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Without an asterisk, the pointer references a memory location.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 With an asterisk, the pointer references the value at that memory location.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Always use the same type of pointer as the variables it examines: 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 floats
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  for 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 floats
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 , 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ints
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  for 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ints
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 , and so on.\
+\ls2\ilvl0\kerning1\expnd0\expndtw0 \outl0\strokewidth0 {\listtext	\'95	}\expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec2 Remember: 
+\i \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 initialize
+\i0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0  a pointer before you use it! Set the pointer equal to the address of some variable in memory.\
+\pard\pardeftab720\sa298
+
+\b\fs36 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pointers, Parenthesis and Math\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc
+
+\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pointer Thing\cell 
+\pard\intbl\itap1\pardeftab720\qc
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Memory Address\cell 
+\pard\intbl\itap1\pardeftab720\qc
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Memory Contents\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1\b0 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 p
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Yep\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Nope\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *p
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Nope\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Yep\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *p++
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Incremented after value is read\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Unchanged\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *(p++)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Incremented after value is read\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Unchanged\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 (*p)++
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Unchanged\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Incremented after it's used\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *++p
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Incremented before value is read\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Unchanged\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *(++p)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Incremented before value is read\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Unchanged\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ++*p
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Unchanged\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Incremented before it's used\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 ++(*p)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Unchanged\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Incremented before it's used\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 p*++
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Not a pointer\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Not a pointer\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1440\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth3160\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth2720\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 p++*
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Not a pointer\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Not a pointer\cell \lastrow\row
+\pard\pardeftab720\sa240
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 The ++ operator is used above, though any math operation can be substituted.\
+A tip: Use parenthesis to isolate part of the pointer problem and the answer will always work out the way you intended.\
+\pard\pardeftab720\sa298
+
+\b\fs36 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pointers and array brackets\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1580\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth1940\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc
+
+\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Array Notation\cell 
+\pard\intbl\itap1\pardeftab720\qc
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Pointer Equivalent\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1580\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth1940\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1\b0 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 array[0]
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *a
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1580\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth1940\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 array[1]
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *(a+1)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1580\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth1940\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 array[2]
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *(a+2)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1580\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth1940\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 array[3]
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *(a+3)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth1580\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx4320
+\clvertalt \clshdrawnil \clwWidth1940\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 array[x]
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *(a+x)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell \lastrow\row
+\pard\pardeftab720\sa298
+
+\b\fs36 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Ugly ** notation\
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trwWidth13840\trftsWidth3 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth3260\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth6020\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth3960\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\qc
+
+\fs24 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Doodad\cell 
+\pard\intbl\itap1\pardeftab720\qc
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 What It Is\cell 
+\pard\intbl\itap1\pardeftab720\qc
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Seen by The Compiler\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trwWidth13840\trftsWidth3 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth3260\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth6020\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth3960\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1\b0 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 array+1
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 An address\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 A pointer\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trwWidth13840\trftsWidth3 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth3260\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth6020\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth3960\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *(array+1)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Contents of address, what lives there\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 A string\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trwWidth13840\trftsWidth3 \trbrdrl\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth3260\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth6020\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth3960\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 *(*(array+1))
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Contents of a character array\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 A character\cell \row
+
+\itap1\trowd \taflags0 \trgaph108\trleft-108 \trwWidth13840\trftsWidth3 \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth3260\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx2880
+\clvertalt \clshdrawnil \clwWidth6020\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx5760
+\clvertalt \clshdrawnil \clwWidth3960\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadt100 \clpadl100 \clpadb100 \clpadr100 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720
+
+\f1 \cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 **(array+1)
+\f0 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Same as above\cell 
+\pard\intbl\itap1\pardeftab720
+\cf2 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 Same as above\cell \lastrow\row
+}
